@@ -39,6 +39,50 @@ Once the tests have finished, the result file is available at the specified path
 File may now be digested by most CI tools.
 For Jenkins this is done using the [JUnit plugin](https://plugins.jenkins.io/junit/).
 
+## GitHub Actions Example
+
+GitHub provides the GitHub Actions CI toolchain, which is very similar to other vendor alternatives such as GitLabs or Azure DevOps. 
+To run your CI pipeline using one of these tools, you would typically setup your own self hosted runner, where you would install LabVIEW, LUnit, and LUnit CLI.
+A minimal example workflow for running tests and reporting results back to GitHub would look like below, using the dorny test result reporter.
+
+```yml
+name: 'LUnit Test Action'
+description: 'Runs all LUnit tests in LabVIEW project using LUnit CLI'
+
+inputs:
+  project-path:
+    description: 'Path to LabVIEW project'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+      - run: echo "$env:GITHUB_WORKSPACE\LabVIEWCLI_LUnit.xml"
+        shell: powershell
+      - run: |
+          LabVIEWCLI `
+            -OperationName LUnit `
+            -ProjectPath $env:GITHUB_WORKSPACE\${{ inputs.project-path }} `
+            -TestRunners 1 `
+            -LabVIEWPath $env:LabVIEWPath `
+            -PortNumber $env:LabVIEWPort `
+            -ReportPath $env:GITHUB_WORKSPACE\LabVIEWCLI_LUnit.xml `
+            -ClearIndex TRUE
+        shell: powershell
+      - name: Publish Test Report
+        uses: dorny/test-reporter@v2
+        if: ${{ !cancelled() }}
+        with:
+          name: LUnit Tests
+          path: logs/LabVIEWCLI_LUnit.xml
+          reporter: java-junit
+```
+
+Here it is assumed that the LabVIEW port and path are configured in the system wide environment variables `LabVIEWPort` and `LabVIEWPath`.
+When this runs, it will execute the test suite and report results back to GitHub, with a result as below.
+
+![github-result](img/github-result.png)
+
 ## Jenkins Example
 
 Jenkins is a popular open source automation server used for continuous integration and delivery pipelines.
