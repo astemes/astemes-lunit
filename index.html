@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Anton Sundqvist" name="author"/>
+<link href="http://astemes.com/" rel="canonical"/>
+<link href="Style/logo.png" rel="icon"/>
+<meta content="mkdocs-1.2.3, mkdocs-material-7.3.4" name="generator"/>
+<title>Astemes LUnit</title>
+<link href="assets/stylesheets/main.db9e7362.min.css" rel="stylesheet"/>
+<link href="assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+<link href="Style/style.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
+<script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#lunit">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Astemes LUnit" class="md-header__button md-logo" data-md-component="logo" href="." title="Astemes LUnit">
+<img alt="logo" src="Style/logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Astemes LUnit
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              LUnit
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/astemes/astemes-lunit/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Astemes LUnit" class="md-nav__button md-logo" data-md-component="logo" href="." title="Astemes LUnit">
+<img alt="logo" src="Style/logo.png"/>
+</a>
+    Astemes LUnit
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/astemes/astemes-lunit/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="10_Basics/">
+        Basics
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="20_Framework%20Architecture/">
+        Framework Architecture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="24_Profiling%20Tools/">
+        Profiling Tools
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="30_CI%20Integration/CI%20Integration/">
+        CI Integration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="40_Real-Time%20Systems/">
+        Real-Time Systems
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="81_Creating%20Report%20Plugins/Creating%20Report%20Plugins/">
+        Creating Report Plugins
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
+          License
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="License" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          License
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="90_License/10_Astemes%20LUnit/LICENSE/">
+        Astemes LUnit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="90_License/80_JKI%20Flat%20UI%20Controls/JKI%20Flat%20UI%20Controls%202.0%20License/">
+        JKI Flat UI Controls
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+    Prerequisites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#installation">
+    Installation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-lunit">
+    Using LUnit
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#documentation">
+    Documentation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#examples">
+    Examples
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#is-it-free-and-open-source">
+    Is it free and open source?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#versioning">
+    Versioning
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#support">
+    Support
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contribute">
+    Contribute
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/astemes/astemes-lunit/edit/master/docs/index.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<h1 id="lunit">LUnit</h1>
+<p><a href="https://www.vipm.io/package/astemes_lib_lunit/"><img alt="Image" src="https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=installs"/></a> <a href="https://www.vipm.io/package/astemes_lib_lunit/"><img alt="Image" src="https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=stars"/></a></p>
+<p>A LabVIEW Unit Testing Framework built on the <a href="https://en.wikipedia.org/wiki/XUnit">xUnit</a> unit testing industry standard and inspired by <a href="https://github.com/JKISoftware/JKI-VI-Tester">JKI VI Tester</a>.
+LUnit helps you test drive your LabVIEW development and provides the following key features.</p>
+<ul>
+<li>Fast test execution*</li>
+<li>Clear and informative results view</li>
+<li>Run specific tests quickly from right-click menu</li>
+<li>Test results visible directly in LabVIEW project</li>
+<li>Instant loading of UI</li>
+<li>Parallel test execution managed by framework</li>
+<li>Dynamic test methods for testing of class hierarchies</li>
+<li>Profiling tools for test execution time and code coverage</li>
+<li>Native CLI and support for CI</li>
+<li>LabVIEW API</li>
+</ul>
+<p>Full documentation available on <a href="https://lunit.astemes.com/">https://lunit.astemes.com</a>.</p>
+<p>*Test execution speed is really best-in-class. 
+Below is a comparison between LUnit and two other popular unit testing toolkits**.
+The benchmark is available <a href="https://github.com/Astemes/astemes-lunit/tree/main/sandbox/Benchmark">here</a> and consists of 160 tests in 20 test case classes.
+The times reported are averages over 5 runs started by the <code>Run All</code> feature of each framework.
+As the tests themselves are empty, the benchmark measures only the overhead added by the framework.</p>
+<p><img alt="Benchmark" src="https://raw.githubusercontent.com/Astemes/astemes-lunit/main/docs/10_Basics/img/Benchmark.png" width="400"/></p>
+<p>** The numbers are results from two test environment and you will get different results with other setups.
+The conclusion is that LUnit is somewhere in the range of 2x-10x faster than other available tools.
+If you find significantly differing results, please get in touch.
+As of version 1.6 of LUnit the performance was further improved by more than 2x when running tests in parallell, which is not shown in numbers above.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To use LUnit you will need to have LabVIEW 2020 32-bit, LabVIEW 2020 64-bit SP1, or any later version of LabVIEW installed.
+Please note that for 64-bit LabVIEW, version LabVIEW 2020 SP1 or later is required to work as expected.
+As LUnit was developed using the LabVIEW Community Edition there is currently no support for older versions of LabVIEW.
+Operation system requirements are Windows 10 (version 1909)/8.1 Update 12/7 SP13, Windows Server 2016, Windows Server 2012 R22, or Windows Server 2008 R2 SP13.</p>
+<h2 id="installation">Installation</h2>
+<p>LUnit is easiest installed using <a href="https://www.vipm.io/package/astemes_lib_lunit/">VI Package Manager</a>(VIPM).
+New releases are published to VIPM regularly, but lags behind the latest stable version published at <a href="https://github.com/astemes/astemes-lunit/releases/">https://github.com/astemes/astemes-lunit/releases/</a>.
+The release contains a VIPM package which is installed using VIPM.</p>
+<h2 id="using-lunit">Using LUnit</h2>
+<p>Once installed, LUnit is integrated into the LabVIEW development environment and the functionality is accessed through the Tools-&gt;LUnit menu.
+From the menu, you may create a new tests or open the LUnit UI to run tests.</p>
+<p>When you have created a Test Case class, you can create new test VI:s using the provided template or by creating static or dynamic dispatch VI:s on the Test Case class.
+Static dispatch is recommended, unless you are using the test inheritance feature, as they have less overhead and does not lock the Test Case classes when the UI is loaded.</p>
+<p>All tests within a Test Case class may executed from the project explorer, by right-clicking on a Test Case and selecting <code>Run Test Case...</code> from the menu.
+As of LUnit version 1.5, a test VI may be executed by simply running it in LabVIEW using the run arrow.
+There is also a toolbar button added to the LabVIEW Project Explorer to run all tests in project or create a new test case.</p>
+<h2 id="documentation">Documentation</h2>
+<p>Documentation is available at <a href="https://lunit.astemes.com">https://lunit.astemes.com</a>.
+A 15 minute demonstration and introduction to LUnit, recorded in 2024, is available <a href="https://www.youtube.com/watch?v=Cxb1FUIsC04">here</a>.
+A presentation introducing LUnit was given at GLA Summit 2021 and the video recording is available <a href="https://www.youtube.com/watch?v=Kys_w2RNffw&amp;t=131s">here</a>.</p>
+<h2 id="examples">Examples</h2>
+<p>There are a few examples installed with LUnit and these may be found through the NI Example Finder using the keyword <code>LUnit</code>.
+The examples are installed at <code>C:\Program Files (x86)\National Instruments\LabVIEW 20XX\examples\Astemes\LUnit</code> by default.</p>
+<h2 id="is-it-free-and-open-source">Is it free and open source?</h2>
+<p>Yes, absolutely!
+LUnit is released by <a href="https://www.astemes.com">Astemes</a> under the MIT license.
+If you find it useful, please consider starring the project on GitHub and VIPM.</p>
+<h2 id="versioning">Versioning</h2>
+<p>LUnit uses semantic version in the format major.minor.fix.build. 
+The build version is of little significance as it only denotes the number of the build.
+The fix indicates a bug fix, minor feature, or other improvement. 
+As new major features are released or the number of minor feature releases accumulates, the minor version is incremented.
+Minor version updates are uploaded to VIPM and NI Tools Network after an initial testing period.
+These updates should be non-breaking and should not require any changes to the client code.
+A major version update would mean that code developed using an earlier version might need modification.
+There are currently no plans to make any major updates.</p>
+<h2 id="support">Support</h2>
+<p>LUnit is an open source toolkit provided as is and without guarantees by <a href="https://www.astemes.com">Astemes</a>. If you encounter issues, use GitHub Issues to report and track the progress. If you have a suggestion for a solution, please consider making pull request. For paid-for professional support, please <a href="https://www.astemes.com/contact">contact Astemes directly</a>.</p>
+<h2 id="contribute">Contribute</h2>
+<p>If you find LUnit useful, please share it with your colleagues and network to help grow the user base.
+Also, consider starring the project on VIPM or GitHub to let us know that you like it.
+If you find a bug, use the Issues section on GitHub.
+To take a more active role, please feel free to fork the project and make a pull request.</p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+<div class="md-footer-copyright__highlight">
+            Copyright © 2021 - 2025 Astemes
+          </div>
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+            Material for MkDocs
+          </a>
+ ... <a class="link--pdf-download" download href=".\Astemes LUnit.pdf" title="PDF">download PDF</a></div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+<script src="assets/javascripts/bundle.1e84347e.min.js"></script>
+</body>
+</html>

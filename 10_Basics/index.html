@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Anton Sundqvist" name="author"/>
+<link href="http://astemes.com/10_Basics/" rel="canonical"/>
+<link href="../Style/logo.png" rel="icon"/>
+<meta content="mkdocs-1.2.3, mkdocs-material-7.3.4" name="generator"/>
+<title>Basics - Astemes LUnit</title>
+<link href="../assets/stylesheets/main.db9e7362.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+<link href="../Style/style.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
+<script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#lunit-basics">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Astemes LUnit" class="md-header__button md-logo" data-md-component="logo" href=".." title="Astemes LUnit">
+<img alt="logo" src="../Style/logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Astemes LUnit
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Basics
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/astemes/astemes-lunit/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Astemes LUnit" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Astemes LUnit">
+<img alt="logo" src="../Style/logo.png"/>
+</a>
+    Astemes LUnit
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/astemes/astemes-lunit/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Basics
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Basics
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+    Prerequisites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-a-test-case">
+    Creating a Test Case
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-a-test-method">
+    Adding a Test Method
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-assertions">
+    Using Assertions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#running-the-test-case">
+    Running the Test Case
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-utility-vis">
+    Adding utility VI:s
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-the-setup-and-teardown-methods">
+    Using the Setup and Teardown methods
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#organizing-tests">
+    Organizing Tests
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../20_Framework%20Architecture/">
+        Framework Architecture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../24_Profiling%20Tools/">
+        Profiling Tools
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../30_CI%20Integration/CI%20Integration/">
+        CI Integration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../40_Real-Time%20Systems/">
+        Real-Time Systems
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../81_Creating%20Report%20Plugins/Creating%20Report%20Plugins/">
+        Creating Report Plugins
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
+          License
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="License" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          License
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../90_License/10_Astemes%20LUnit/LICENSE/">
+        Astemes LUnit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../90_License/80_JKI%20Flat%20UI%20Controls/JKI%20Flat%20UI%20Controls%202.0%20License/">
+        JKI Flat UI Controls
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+    Prerequisites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-a-test-case">
+    Creating a Test Case
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-a-test-method">
+    Adding a Test Method
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-assertions">
+    Using Assertions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#running-the-test-case">
+    Running the Test Case
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-utility-vis">
+    Adding utility VI:s
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-the-setup-and-teardown-methods">
+    Using the Setup and Teardown methods
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#organizing-tests">
+    Organizing Tests
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/astemes/astemes-lunit/edit/master/docs/10_Basics/index.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<h1 id="lunit-basics">LUnit Basics</h1>
+<p>This document walks through the basic workflow using LUnit to test LabVIEW code.
+If you prefer to watch a video, there is an introduction available on <a href="https://www.youtube.com/watch?v=Cxb1FUIsC04">this link</a>.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To follow along with the instructions on this page you will need to have LabVIEW version 2020 or later installed as well as the LUnit unit testing framework.</p>
+<h2 id="creating-a-test-case">Creating a Test Case</h2>
+<p>All tests you write will belong to a test case class.
+This is implemented as a LabVIEW class, but in order to use it you will not need to know anything about object oriented programming.</p>
+<p>To get started, create an empty project and add a test case class to it by clicking the New Test Case button in the toolbar of the LabVIEW project.</p>
+<p><img alt="Project integration" src="img/project_Integration.png"/></p>
+<p>You can also do the same from the <code>Tools &gt; LUnit &gt; New Test Case...</code> menu option.</p>
+<p><img alt="Tools Menu &gt; Lunit &gt; new test case" src="img/tools_menu_new_tc.jpg"/></p>
+<p>Save the test case in a convenient location.
+Some like to keep the tests next to the code they are testing, and other keep them in a separate folder called <code>Tests</code> or similar.
+I personally find the later option with a separate top level directory the most convenient.
+Keep in mind that tests should not be included in builds and there should be no dependencies pointing from your code to the test code.</p>
+<h2 id="adding-a-test-method">Adding a Test Method</h2>
+<p>Now you have a test case and may add some test methods to the test case.
+A test method is a vi belonging to the test case class and will get executed by the framework.
+The name of the vi <strong>must</strong> start with the four letters "test" (case insensitive).
+It is <strong>not</strong> recommended to make test vi:s <em>dynamic dispatch</em>.</p>
+<p>To create a new test method, right-click on the Test Static Test Method.vit and select <code>New from Template</code>.</p>
+<p><img alt="New from template" src="img/new_static_from_template.png"/></p>
+<p>You can create test methods any way you like and you are free to delete the template method.
+It is important however that the connector pane uses the same pattern of terminals as the template.
+The error in terminal is optional and never used when running tests by the framework.</p>
+<p>You should now make your test method test something useful by implementing the block diagram of the vi.
+To perform tests you will use the assertions available in the provided palette, or using quick drop.</p>
+<p><img alt="Simple test case" src="img/simple_test_case.png"/></p>
+<h2 id="using-assertions">Using Assertions</h2>
+<p>The result of each test is determined using assertions.
+There is a set of assertions to choose from, as shown in the figure above, and the names should be self explanatory.
+One test method may contain multiple assertions and the result from each assertion will show up in the result view.</p>
+<p>One pro-tip is that the <code>Pass if Equal.vi</code> assertion also works well for array data types.
+The result of comparing arrays will show up in the result view as shown below.</p>
+<p><img alt="Comparing Arrays" src="img/array_comparison.jpg"/></p>
+<p>Please note that the <code>Pass if Equal.vi</code> assertion will fail if either the type or the value does not match. </p>
+<h2 id="running-the-test-case">Running the Test Case</h2>
+<p>You can run a single test vi (using the Run Arrow) and it will run and show the user interface with the results of the test.</p>
+<p>Starting from version 1.10 of LUnit, a Quick Drop plugin is available which allows running tests using a Quick Drop shortcut.
+From Quick Drop press <code>Ctrl + L</code> to run all tests within the current project.
+If you open Quick Drop from a VI and press <code>Ctrl + Shift + L</code> LUnit will run all tests from Test Case classes calling this specific VI. 
+This can be very useful for checking if an edit to a VI caused any test to fail.
+Please note that this feature requires all tests to be loaded into memory, <em>i.e.</em> included in the active project, and it can only check for static links.
+The last limitation means that the feature will not work for dynamic dispatch VI:s, as their call sites are not statically known.</p>
+<p>To run all tests contained in a test case, you can right click it in the project window and select the <code>Run Test Case...</code> menu option.</p>
+<p><img alt="Run from right click menu" src="img/run_test_case.png"/></p>
+<p>This will open the test execution user interface and run the test case.
+Alternatively you can also launch the user interface from the tools menu through the <code>Tools &gt; LUnit &gt; LUnit UI...</code> menu option.
+This will open the user interface and show all tests in the current project.
+As the test is run, the results are also shown as visual icons overlays in the project explorer.</p>
+<p><img alt="Run from right click menu" src="img/test_execution_ui.png"/></p>
+<h2 id="adding-utility-vis">Adding utility VI:s</h2>
+<p>It is common that code is reused between tests belonging to a test case class, and could then be placed in subVI:s or so called test utility vi:s.
+If you create such vi:s belonging to the class, make sure to restrict the access scope (<em>i.e</em> make the vi:s <code>protected</code> or <code>protected</code>), as the UI enumerates all public vi:s in the class.</p>
+<h2 id="using-the-setup-and-teardown-methods">Using the Setup and Teardown methods</h2>
+<p>You can add a Setup and a Teardown method to the test case by overriding the corresponding dynamic dispatch vi:s.
+The Setup vi will run once before each test method in the test case and the Teardown will run once after the test method is completed.
+This is useful in some cases, but should not be overused as it makes the test methods less verbose.
+If you need to pass data from the Setup vi to the test method vi or Teardown vi, you can bundle the data into the test case class wire.</p>
+<p><img alt="Run from right click menu" src="img/setup_test_teardown.png"/></p>
+<h2 id="organizing-tests">Organizing Tests</h2>
+<p>It does make sense to organize tests in some manner, especially as the number of tests increase.
+There are many common practices around where to keep tests and how to organize the folder structure on disk. 
+In general it is useful to keep tests separated from the source, as there should be no dependency from the source on the test code.</p>
+<p>While developing, it is convenient to keep the tests within the active LabVIEW project, as they may then be run quickly through the <a href="#running-the-test-case">project integration</a> and you can run all the tests in the project through the tools menu option.
+As test suites grow, it becomes less convenient as the test time accumulates with larger test suites and some of the tests might not be relevant to the feature under development.
+While it is important to run the whole suite to catch regression issues, this does not have to be done as frequently as tests covering the new feature.</p>
+<p>A good workflow is to keep a separate LabVIEW project file as a test suite where all tests are collected.
+Tests may be moved from the active project into this test suite and the test suite may then be added to the active LabVIEW project as a project item. 
+All tests within the test suite project may then be executed using the right click menu option, but will not be executed when running all tests in current project from the tools menu option and will not need to be loaded with the project.</p>
+<p><img alt="Run nested project" src="img/run_nested_project.png"/></p>
+<p>When executing tests in a Continuous Integration environment, this test suite LabVIEW project file is a good entry point for running tests.</p>
+<p>In LUnit version 1.3.1, an additional feature was introduced to help speeding up test execution by skipping slow or unrelated tests.
+A test method (<code>vi</code>) or entire test case class (<code>lvclass</code>) may be marked with an underscore <code>_</code> character as the first character, making it into a <code>dashed</code> test class or test case.
+<code>Dashed</code> tests may be skipped when running through the user interface by using the menu option <code>Ignore Dashed Tests</code> as shown below.</p>
+<p><img alt="Dashed tests" src="img/dashed_tests.jpg"/></p>
+<p>Notice that the test "_test Broken.vi" and the entire "_test Failing Test Case.lvclass" were not executed during the test run in the previous image.
+By toggling the <code>Ignore Dashed Tests</code> menu option, it is straight forward to optimize test execution for either execution speed or test coverage.
+In a typical test driven development workflow, test execution speed must be very fast as the tests are executed repeatedly on time scale of minutes.
+It is however important to catch regressions by regularly running the full test suite, including the dashed tests.
+When running LUnit using the API, as would be the case on a Continuous Integration server, dashed tests are never skipped.</p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Next: Framework Architecture" class="md-footer__link md-footer__link--next" href="../20_Framework%20Architecture/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Framework Architecture
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+<div class="md-footer-copyright__highlight">
+            Copyright © 2021 - 2025 Astemes
+          </div>
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+            Material for MkDocs
+          </a>
+ ... <a class="link--pdf-download" download href="..\Astemes LUnit.pdf" title="PDF">download PDF</a></div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+<script src="../assets/javascripts/bundle.1e84347e.min.js"></script>
+</body>
+</html>

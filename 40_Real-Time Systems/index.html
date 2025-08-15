@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Anton Sundqvist" name="author"/>
+<link href="http://astemes.com/40_Real-Time%20Systems/" rel="canonical"/>
+<link href="../Style/logo.png" rel="icon"/>
+<meta content="mkdocs-1.2.3, mkdocs-material-7.3.4" name="generator"/>
+<title>Real-Time Systems - Astemes LUnit</title>
+<link href="../assets/stylesheets/main.db9e7362.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+<link href="../Style/style.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
+<script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#real-time-systems">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Astemes LUnit" class="md-header__button md-logo" data-md-component="logo" href=".." title="Astemes LUnit">
+<img alt="logo" src="../Style/logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Astemes LUnit
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Real-Time Systems
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/astemes/astemes-lunit/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Astemes LUnit" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Astemes LUnit">
+<img alt="logo" src="../Style/logo.png"/>
+</a>
+    Astemes LUnit
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/astemes/astemes-lunit/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../10_Basics/">
+        Basics
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../20_Framework%20Architecture/">
+        Framework Architecture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../24_Profiling%20Tools/">
+        Profiling Tools
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../30_CI%20Integration/CI%20Integration/">
+        CI Integration
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Real-Time Systems
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Real-Time Systems
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-with-hardware">
+    Testing with hardware
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#about-running-tests-on-a-real-time-target">
+    About running tests on a Real-Time target
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#working-with-tests-in-labview-real-time">
+    Working with tests in LabVIEW Real-Time
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#running-lunit-on-a-real-time-target">
+    Running LUnit on a Real-Time target
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../81_Creating%20Report%20Plugins/Creating%20Report%20Plugins/">
+        Creating Report Plugins
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
+          License
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="License" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          License
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../90_License/10_Astemes%20LUnit/LICENSE/">
+        Astemes LUnit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../90_License/80_JKI%20Flat%20UI%20Controls/JKI%20Flat%20UI%20Controls%202.0%20License/">
+        JKI Flat UI Controls
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-with-hardware">
+    Testing with hardware
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#about-running-tests-on-a-real-time-target">
+    About running tests on a Real-Time target
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#working-with-tests-in-labview-real-time">
+    Working with tests in LabVIEW Real-Time
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#running-lunit-on-a-real-time-target">
+    Running LUnit on a Real-Time target
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/astemes/astemes-lunit/edit/master/docs/40_Real-Time Systems/index.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<h1 id="real-time-systems">Real-Time Systems</h1>
+<p>A good rule of thumb is to only write tests for the code which you want to work.
+Thus, code running on a real time system does in general qualify for testing.
+And it is particularly useful to test the code outside production as debugging and troubleshooting a real-time target can be very painful.</p>
+<h2 id="testing-with-hardware">Testing with hardware</h2>
+<p>Any kind of input/output (IO) is problematic when writing test code. 
+In LabVIEW we typically have IO in the form of user interfaces, hardware drivers, and possibly some databases and files.
+When running tests on code coupled to IO of some sort, it is in general worth separating the code at the boundaries to test the IO communication separtely from the rest of the application.
+There are many reasons for this including:</p>
+<ul>
+<li>Testing with hardware requires you to have the hardware setup in order to run the tests. This might not be convenient or even feasible in many cases.</li>
+<li>Including hardware, and the configuration of it, adds a large chunk of complexity as there are more things that can fail.</li>
+<li>Hardware communication adds significant overhead to the test time.</li>
+<li>If the hardware is hidden behind an abstraction, it may easily be replaced. </li>
+<li>Replacing hardware IO with a test double ensures determinism when running the tests.</li>
+<li>Testing that the driver works does not add much value in an automated test environment.</li>
+</ul>
+<p>How to use test doubles to avoid testing with real world IO is an interesting topic, but beyond the scope of this document. </p>
+<h2 id="about-running-tests-on-a-real-time-target">About running tests on a Real-Time target</h2>
+<p>While it is very important to test the code on actual hardware, it does not make sense in most cases to run unit tests on a real-time target. 
+To do so would slow down test execution and requires access to the target during development.
+There are some differences and peculiarities to keep in mind when executing code in an RT environment, <em>e.g.</em> file paths and unsupported features, but apart from that the code should work the same as under Windows.
+This means that a failing test under Windows should fail on the RT system as well. 
+Even if the reverse is not allways true, it is often best to assume it is and fall back on debugging when it is not.
+If running tests on the RT system is necessary, please see <a href="#running-lunit-on-a-real-time-target">this section</a></p>
+<h2 id="working-with-tests-in-labview-real-time">Working with tests in LabVIEW Real-Time</h2>
+<p>It is somewhat more tedious to work with tests for code on a LabVIEW Real-Time target compared to vanilla LabVIEW.
+One reason for this is that libraries gets locked when opened in multiple application instances, and this would happen frequently when developing code on an RT target and testing under Windows.
+Additionally the code needs to be recompiled  for the different targets.</p>
+<p>A direct approach would be to keep the test case under the target and run it as normal using the UI.</p>
+<p><img alt="Tests located under RT target" src="img/tests_under_target.png"/></p>
+<p>This works in principle, but LabVIEW will recompile the code for each test execution and is for this reason rather slow.
+This recompilation can be avoided by moving the test case to the My Computer target.</p>
+<p><img alt="Tests located under My Computer" src="img/tests_under_my_computer.png"/></p>
+<p>This speeds up the loading of the test as compilation is avoided, but it comes at the cost of locking the class under test.
+The lock occurs because the test case depends on the class under test, which is then loaded into two separate application instances.</p>
+<p>To solve this we can create a new project file to contain the tests and add this to our main project as a project item. </p>
+<p><img alt="Tests located in test suite lvproj" src="img/tests_in_test_suite_lvproj.png"/></p>
+<p>As the project file is treated as a text file by LabVIEW, it will not load anything into memory when added to the project.
+This implies that the class under test will not be locked unless the test suite is also in memory.
+The test suite may then be run from the right click menu and tests will not need to be recompiled on subsequent test executions.
+There will however be a smaller overhead from loading the project into memory when running the tests.
+Please note that this feature requires LUnit version 1.0.5 or higher.</p>
+<p><img alt="Run tests in test suite" src="img/run_tests_in_suite.png"/></p>
+<h2 id="running-lunit-on-a-real-time-target">Running LUnit on a Real-Time target</h2>
+<p>There is nothing preventing LUnit from running in a Real-Time environment.
+However, the Test Execution UI will not be able to run on the target as it uses front panel events not available under LabVIEW Real-Time. 
+Instead the LUnit LabVIEW API should be used to execute tests and collect results when the tests must run on the Real-Time target.</p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: CI Integration" class="md-footer__link md-footer__link--prev" href="../30_CI%20Integration/CI%20Integration/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              CI Integration
+            </div>
+</div>
+</a>
+<a aria-label="Next: Creating Report Plugins" class="md-footer__link md-footer__link--next" href="../81_Creating%20Report%20Plugins/Creating%20Report%20Plugins/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Creating Report Plugins
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+<div class="md-footer-copyright__highlight">
+            Copyright © 2021 - 2025 Astemes
+          </div>
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+            Material for MkDocs
+          </a>
+ ... <a class="link--pdf-download" download href="..\Astemes LUnit.pdf" title="PDF">download PDF</a></div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+<script src="../assets/javascripts/bundle.1e84347e.min.js"></script>
+</body>
+</html>
