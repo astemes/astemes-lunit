@@ -1,0 +1,77 @@
+name: Test Runner
+on: [push]
+permissions:
+  contents: write
+jobs:
+  checkout:
+    runs-on: self-hosted
+    steps:
+      - name: Generate Token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+            app-id: ${{ secrets.APP_ID }}
+            private-key: ${{ secrets.APP_PRIVATE_KEY }}
+            owner: astemes
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: 'recursive'
+          token: ${{ steps.app-token.outputs.token }}
+      - name: Checkout Tools
+        uses: actions/checkout@v4
+        with:
+          repository: astemes/astemes-github-actions
+          ref: main
+          token: ${{ steps.app-token.outputs.token }}
+          path: ./.github/actions
+  test:
+    needs: checkout
+    runs-on: self-hosted
+    steps:
+      - uses: ./.github/actions/runLUnit
+        with:
+          project-path: "source\\LUnit Framework.lvproj"
+  build:
+    needs: test
+    runs-on: self-hosted
+    steps:
+      - name: Clear Mutation history
+        uses: ./.github/actions/clearMutationHistory
+        with:
+          directory: "source"
+      - uses: ./.github/actions/buildLVBuildSpec
+        with:
+          project-path: "source\\LUnit Framework.lvproj"
+          build-spec: "LUnit"
+      - name: Build MKDocs
+        uses: ./.github/actions/buildDocs
+        with:
+            project-title: "Docs Sandbox"
+            author: "Anton Sundqvist"
+            initial-release: "2025"
+  release:
+    needs: build
+    runs-on: self-hosted
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+      - name: Get version
+        id: get_version
+        uses: ./.github/actions/getVersion
+      - name: Build VIP
+        id: build-vip
+        uses: ./.github/actions/buildVIPackage
+        with:
+          vipb-path: "source\\vipm.vipb"
+          lv-version: "20.0"
+          pkg-version: "${{ steps.get_version.outputs.version }}"
+      - name: Release VIP
+        uses: ./.github/actions/releaseFile
+        with:
+          file-path: "${{ steps.build-vip.outputs.vip-path }}"
+      - name: Deploy GHPages
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          python -m mkdocs gh-deploy --force
+        shell: powershell
