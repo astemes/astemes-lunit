@@ -63,7 +63,7 @@ jobs:
         id: build-vip
         uses: ./.github/actions/buildVIPackage
         with:
-          vipb-path: "source\\vipm.vipb"
+          vipb-path: "source\\LUnit.vipb"
           lv-version: "20.0"
           pkg-version: "${{ steps.get_version.outputs.version }}"
       - name: Release VIP
