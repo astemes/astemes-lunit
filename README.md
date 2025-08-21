@@ -1,5 +1,7 @@
 # LUnit
-[![Image](https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=installs)](https://www.vipm.io/package/astemes_lib_lunit/) [![Image](https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=stars)](https://www.vipm.io/package/astemes_lib_lunit/)
+[![Image](https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=installs)](https://www.vipm.io/package/astemes_lib_lunit/) 
+[![Image](https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=stars)](https://www.vipm.io/package/astemes_lib_lunit/)
+[![Test Runner](https://github.com/astemes/astemes-lunit/actions/workflows/workflow.yml/badge.svg)](https://github.com/astemes/astemes-lunit/actions/workflows/workflow.yml)
 
 A LabVIEW Unit Testing Framework built on the [xUnit](https://en.wikipedia.org/wiki/XUnit) unit testing industry standard and inspired by [JKI VI Tester](https://github.com/JKISoftware/JKI-VI-Tester).
 LUnit helps you test drive your LabVIEW development and provides the following key features.
