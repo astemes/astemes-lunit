@@ -48,7 +48,7 @@ jobs:
       - name: Build MKDocs
         uses: ./.github/actions/buildDocs
         with:
-            project-title: "Docs Sandbox"
+            project-title: "LUnit"
             author: "Anton Sundqvist"
             initial-release: "2025"
   release:
