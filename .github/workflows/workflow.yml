@@ -30,7 +30,7 @@ jobs:
     needs: checkout
     runs-on: self-hosted
     steps:
-      - uses: ./.github/actions/runLUnit
+      - uses: ./.github/actions/runLUnitGCLI
         with:
           project-path: "source\\LUnit Framework.lvproj"
   build:
@@ -41,7 +41,7 @@ jobs:
         uses: ./.github/actions/clearMutationHistory
         with:
           directory: "source"
-      - uses: ./.github/actions/buildLVBuildSpec
+      - uses: ./.github/actions/buildLVBuildSpecGCLI
         with:
           project-path: "source\\LUnit Framework.lvproj"
           build-spec: "LUnit"
@@ -61,7 +61,7 @@ jobs:
         uses: ./.github/actions/getVersion
       - name: Build VIP
         id: build-vip
-        uses: ./.github/actions/buildVIPackage
+        uses: ./.github/actions/buildVIPackageGCLI
         with:
           vipb-path: "source\\LUnit.vipb"
           lv-version: "20.0"
