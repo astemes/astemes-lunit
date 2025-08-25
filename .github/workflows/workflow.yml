@@ -57,7 +57,7 @@ jobs:
         uses: ./.github/actions/getVersion
       - name: Build VIP
         id: build-vip
-        uses: ./.github/actions/buildVIPackageGCLI
+        uses: ./.github/actions/buildVIPackage
         with:
           vipb-path: "source\\LUnit.vipb"
           lv-version: "20.0"
