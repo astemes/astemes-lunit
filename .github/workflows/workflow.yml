@@ -37,10 +37,6 @@ jobs:
     needs: test
     runs-on: lv2020
     steps:
-      - name: Clear Mutation history
-        uses: ./.github/actions/clearMutationHistory
-        with:
-          directory: "source"
       - uses: ./.github/actions/buildLVBuildSpecGCLI
         with:
           project-path: "source\\LUnit Framework.lvproj"
