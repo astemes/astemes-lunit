@@ -4,7 +4,7 @@ permissions:
   contents: write
 jobs:
   checkout:
-    runs-on: self-hosted
+    runs-on: lv2020
     steps:
       - name: Generate Token
         id: app-token
@@ -28,14 +28,14 @@ jobs:
           path: ./.github/actions
   test:
     needs: checkout
-    runs-on: self-hosted
+    runs-on: lv2020
     steps:
       - uses: ./.github/actions/runLUnitGCLI
         with:
           project-path: "source\\LUnit Framework.lvproj"
   build:
     needs: test
-    runs-on: self-hosted
+    runs-on: lv2020
     steps:
       - name: Clear Mutation history
         uses: ./.github/actions/clearMutationHistory
@@ -53,7 +53,7 @@ jobs:
             initial-release: "2025"
   release:
     needs: build
-    runs-on: self-hosted
+    runs-on: lv2020
     if: startsWith(github.ref, 'refs/tags/')
     steps:
       - name: Get version
