@@ -30,14 +30,14 @@ jobs:
     needs: checkout
     runs-on: lv2020
     steps:
-      - uses: ./.github/actions/runLUnitGCLI
+      - uses: ./.github/actions/runLUnit
         with:
           project-path: "source\\LUnit Framework.lvproj"
   build:
     needs: test
     runs-on: lv2020
     steps:
-      - uses: ./.github/actions/buildLVBuildSpecGCLI
+      - uses: ./.github/actions/buildLVBuildSpec
         with:
           project-path: "source\\LUnit Framework.lvproj"
           build-spec: "LUnit"
