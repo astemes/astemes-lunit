@@ -2,23 +2,17 @@ name: Test Runner
 on: [push]
 permissions:
   contents: write
+concurrency:
+  group: lv2020
+  cancel-in-progress: false
 jobs:
   checkout:
     runs-on: lv2020
     steps:
-      - name: Generate Token
-        id: app-token
-        uses: actions/create-github-app-token@v1
-        with:
-            app-id: ${{ secrets.APP_ID }}
-            private-key: ${{ secrets.APP_PRIVATE_KEY }}
-            owner: astemes
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
           submodules: 'recursive'
-          token: ${{ steps.app-token.outputs.token }}
   test:
     needs: checkout
     runs-on: lv2020
