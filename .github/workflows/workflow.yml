@@ -19,30 +19,23 @@ jobs:
           fetch-depth: 0
           submodules: 'recursive'
           token: ${{ steps.app-token.outputs.token }}
-      - name: Checkout Tools
-        uses: actions/checkout@v4
-        with:
-          repository: astemes/astemes-github-actions
-          ref: main
-          token: ${{ steps.app-token.outputs.token }}
-          path: ./.github/actions
   test:
     needs: checkout
     runs-on: lv2020
     steps:
-      - uses: ./.github/actions/runLUnit
+      - uses: astemes/astemes-github-actions/runLUnit@main
         with:
           project-path: "source\\LUnit Framework.lvproj"
   build:
     needs: test
     runs-on: lv2020
     steps:
-      - uses: ./.github/actions/buildLVBuildSpec
+      - uses: astemes/astemes-github-actions/buildLVBuildSpec@main
         with:
           project-path: "source\\LUnit Framework.lvproj"
           build-spec: "LUnit"
       - name: Build MKDocs
-        uses: ./.github/actions/buildDocs
+        uses: astemes/astemes-github-actions/buildDocs@main
         with:
             project-title: "LUnit"
             author: "Anton Sundqvist"
@@ -54,16 +47,16 @@ jobs:
     steps:
       - name: Get version
         id: get_version
-        uses: ./.github/actions/getVersion
+        uses: astemes/astemes-github-actions/getVersion@main
       - name: Build VIP
         id: build-vip
-        uses: ./.github/actions/buildVIPackage
+        uses: astemes/astemes-github-actions/buildVIPackage@main
         with:
           vipb-path: "source\\LUnit.vipb"
           lv-version: "20.0"
           pkg-version: "${{ steps.get_version.outputs.version }}"
       - name: Release VIP
-        uses: ./.github/actions/releaseFile
+        uses: astemes/astemes-github-actions/releaseFile@main
         with:
           file-path: "${{ steps.build-vip.outputs.vip-path }}"
       - name: Deploy GHPages
