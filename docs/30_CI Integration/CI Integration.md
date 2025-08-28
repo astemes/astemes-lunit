@@ -21,7 +21,7 @@ The `-ClearIndex` flag may be used to override this behavior and re-use the inde
 
 |Argument|Description
 |---|---|
-|<nobr>`-ProjectPath`</nobr>|The project containing the tests to be executed. The interface also accepts libraries or test case classes of types .lvlib or .lvclass.|
+|<nobr>`-Path or -ProjectPath`</nobr>|The project containing the tests to be executed. The interface also accepts libraries or test case classes of types .lvlib or .lvclass. If you provide a directory, all tests within this directory or sub directories will be executed|
 |<nobr>`-TestRunners`</nobr>|Specifies the number of parallel test runners to spawn. Default value is 1.|
 |<nobr>`-ReportPath`</nobr>|The output path for the report file generated. The execution generates either a .txt-file or an .xml-file, based on the path specified.|
 |<nobr>`-ClearIndex`</nobr>|Clear the index and force LUnit to rediscover all tests. Default is ``True``. The index must be cleared to find new tests inherited for a Test Case. |
@@ -46,39 +46,27 @@ To run your CI pipeline using one of these tools, you would typically setup your
 A minimal example workflow for running tests and reporting results back to GitHub would look like below, using the dorny test result reporter.
 
 ```yml
-name: 'LUnit Test Action'
-description: 'Runs all LUnit tests in LabVIEW project using LUnit CLI'
+name: 'LUnit Test'
+description: 'Runs all LUnit tests under the tests directory using LUnit CLI'
 
-inputs:
-  project-path:
-    description: 'Path to LabVIEW project'
-    required: true
-
-runs:
-  using: "composite"
+jobs:
   steps:
-      - run: echo "$env:GITHUB_WORKSPACE\LabVIEWCLI_LUnit.xml"
-        shell: powershell
+      - name: Run LUnit tests
       - run: |
           LabVIEWCLI `
             -OperationName LUnit `
-            -ProjectPath $env:GITHUB_WORKSPACE\${{ inputs.project-path }} `
-            -TestRunners 1 `
-            -LabVIEWPath $env:LabVIEWPath `
-            -PortNumber $env:LabVIEWPort `
+            -ProjectPath $env:GITHUB_WORKSPACE\tests `
             -ReportPath $env:GITHUB_WORKSPACE\LabVIEWCLI_LUnit.xml `
-            -ClearIndex TRUE
         shell: powershell
       - name: Publish Test Report
         uses: dorny/test-reporter@v2
         if: ${{ !cancelled() }}
         with:
           name: LUnit Tests
-          path: logs/LabVIEWCLI_LUnit.xml
+          path: LabVIEWCLI_LUnit.xml
           reporter: java-junit
 ```
 
-Here it is assumed that the LabVIEW port and path are configured in the system wide environment variables `LabVIEWPort` and `LabVIEWPath`.
 When this runs, it will execute the test suite and report results back to GitHub, with a result as below.
 
 ![github-result](img/github-result.png)
