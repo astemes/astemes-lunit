@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2025-03-31 14:15:43" Creator="Anton Sundqvist" Comments="" ID="db54c497235733075fd98577e54bc8b5">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2025-08-28 13:28:09" Creator="Anton Sundqvist" Comments="" ID="3e17100757dacd8c3895cd95bd8cb1ec">
   <Library_General_Settings>
     <Package_File_Name>Astemes_lib_LUnit</Package_File_Name>
     <Library_Version>1.9.17.2</Library_Version>
@@ -41,21 +41,19 @@
 
 LUnit is integrated into the LabVIEW development environment and the functionality is accessed through the Tools-&gt;LUnit menu. From the menu, you may create a new tests or open the LUnit UI to run tests. Tests may also be executed directly from the project explorer by right-clicking on a Test Case and selecting Run Test Case... from the menu.
 
+From Quick Drop window (ctrl+space) use:
+ - Ctrl+L to run all tests within active project
+ - Ctrl+Shift+L to run all test cases with tests calling into the current VI
+
 There are a few examples installed with LUnit and these may be found through the NI Example Finder using the keyword LUnit. The examples are installed at C:\Program Files (x86)\National Instruments\LabVIEW 20XX\examples\Astemes\LUnit by default.
 
 Documentation is available on https://lunit.astemes.com.</Description>
       <Copyright>Copyright (c) 2020, Astemes</Copyright>
       <Packager>Anton Sundqvist</Packager>
       <URL>https://lunit.astemes.com</URL>
-      <Release_Notes>Add Quick Drop shortcut. From Quick Drop window (ctrl+space) use:
- - Ctrl+L to run all tests within active project
- - Ctrl+Shift+L to run all test cases with tests calling into the current VI
-
-Fix issue #21
-Fix issue #23
-Fix issue #24
-Fix issue #25
-Fix issue #26</Release_Notes>
+      <Release_Notes>Fix issue #27 - Improved results window for parameterized test addon. Clicking a parameter opens the Parameters.vi
+Fix issue #30 - Improved details to JUnit xml report format. This resolves issues with more strict JUnit xml report parsers, such as the &lt;i&gt;Dorny Test Reporter&lt;/i&gt;.
+Fix issue #31 - API now accepts a directory containing tests as input. This means that you do not need to organize tests in a LabVIEW project and can have LUnit run e.g. all tests in a &lt;i&gt;/tests&lt;/i&gt; directory. This works directly with existing CLI tools such as &lt;i&gt;LUnit CLI&lt;/i&gt; or &lt;i&gt;LUnit for GCLI&lt;/i&gt; without any additional updates. </Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -252,7 +250,7 @@ Fix issue #26</Release_Notes>
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Core\LUnit Test Case\Assertions\Pass.vi</Path>
+        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Pass.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -266,7 +264,7 @@ Fix issue #26</Release_Notes>
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Core\LUnit Test Case\Assertions\Fail.vi</Path>
+        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Fail.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -280,7 +278,7 @@ Fix issue #26</Release_Notes>
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Core\LUnit Test Case\Assertions\Pass If.vi</Path>
+        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Pass If.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -294,7 +292,7 @@ Fix issue #26</Release_Notes>
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Core\LUnit Test Case\Assertions\Fail If.vi</Path>
+        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Fail If.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -322,7 +320,7 @@ Fix issue #26</Release_Notes>
           <Column>3</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Core\LUnit Test Case\Assertions\Fail If Error.vi</Path>
+        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Fail If Error.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -395,7 +393,7 @@ Fix issue #26</Release_Notes>
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Fail If Equal.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>956D73687AAE9C39CB49469E68441310</GUID>
+      <GUID>D383566DD598BC9C5BDE7080850FA7AE</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -427,7 +425,7 @@ Fix issue #26</Release_Notes>
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Core\Advanced Assertions\Pass If Matching String.vi</Path>
+        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Advanced Assertions\Pass If Matching String.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -441,7 +439,7 @@ Fix issue #26</Release_Notes>
           <Column>3</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Core\Advanced Assertions\Pass If Specific Error.vi</Path>
+        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Advanced Assertions\Pass If Specific Error.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -455,7 +453,7 @@ Fix issue #26</Release_Notes>
           <Column>2</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Core\Advanced Assertions\Fail If Matching String.vi</Path>
+        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Advanced Assertions\Fail If Matching String.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -469,7 +467,7 @@ Fix issue #26</Release_Notes>
           <Column>3</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Core\Advanced Assertions\Fail If Specific Error.vi</Path>
+        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Advanced Assertions\Fail If Specific Error.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -500,7 +498,7 @@ Fix issue #26</Release_Notes>
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Advanced Assertions\Fail If In Collection.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AB65469E6BB73AEEFF092038FC8A22CD</GUID>
+      <GUID>8471F0F6135DB649C9C776B28ADF1307</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -532,10 +530,10 @@ Fix issue #26</Release_Notes>
           <Column>1</Column>
         </Position>
         <Icon>00000000</Icon>
-        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\User Interface\Execution API\Public\API\LUnit Run Tests.vi</Path>
+        <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\API\LUnit Run Tests.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>68B892954666455BD3B69340B11163DB</GUID>
+      <GUID>212F4195EF2C9A0EF6220726C1E88741</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
