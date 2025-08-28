@@ -58,7 +58,7 @@ jobs:
       - name: Release VIP
         uses: astemes/astemes-github-actions/releaseFile@main
         with:
-          file-path: "${{ steps.build-vip.outputs.vip-path }}"
+          file-path: "${{ steps.build-vip.outputs.artifact-path }}"
       - name: Deploy GHPages
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
