@@ -1,4 +1,4 @@
-name: Test Runner
+name: Test, Build, Release
 on: [push]
 permissions:
   contents: write
