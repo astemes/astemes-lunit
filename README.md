@@ -94,4 +94,5 @@ LUnit is an open source toolkit provided as is and without guarantees by [Asteme
 If you find LUnit useful, please share it with your colleagues and network to help grow the user base.
 Also, consider starring the project on VIPM or GitHub to let us know that you like it.
 If you find a bug, use the Issues section on GitHub.
-To take a more active role, please feel free to fork the project and make a pull request.
+
+To take a more active role, please feel free to fork the project and make a pull request. See `CONTRIBUTING.md` for more info on the development stack / process.
