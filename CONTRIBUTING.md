@@ -2,7 +2,7 @@
 
     GitHub provides a setup guide is [here](https://docs.github.com/en/get-started/git-basics/set-up-git).
 
-2. Clone the `astemes-lunit` repo and the `astemes-string-diff-utils` submodule using .
+2. Clone the `astemes-lunit` repo and the `astemes-string-diff-utils`.
 
     If your tool does not automatically clone the `astemes-string-diff-utils` submodule, execute the following command from within your local `astemes-lunit` folder:
     ```shell
