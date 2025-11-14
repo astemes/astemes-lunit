@@ -1,0 +1,25 @@
+name: Unit Tests
+on:
+  push:
+    branches:
+      - '**'
+    tags-ignore:
+      - '**'
+concurrency:
+  group: lv2020
+  cancel-in-progress: false
+jobs:
+  checkout:
+    runs-on: lv2020
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+  test:
+    needs: checkout
+    runs-on: lv2020
+    steps:
+      - uses: astemes/astemes-github-actions/runLUnit@main
+        with:
+          project-path: "source\\LUnit Framework.lvproj"
