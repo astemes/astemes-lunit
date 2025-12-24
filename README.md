@@ -13,7 +13,6 @@ LUnit helps you test drive your LabVIEW development and provides the following k
 - Test results visible directly in LabVIEW project
 - Instant loading of UI
 - Parallel test execution managed by framework
-- Dynamic test methods for testing of class hierarchies
 - Profiling tools for test execution time and code coverage
 - Native CLI and support for CI
 - LabVIEW API
