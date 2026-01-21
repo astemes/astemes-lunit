@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2025-08-28 14:34:46" Creator="Anton Sundqvist" Comments="" ID="d1a80b2c0fdb570d826689bae2296f52">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2026-01-21 17:56:18" Creator="Anton Sundqvist" Comments="" ID="5150775f40437d482d94d7e2c1518574">
   <Library_General_Settings>
     <Package_File_Name>Astemes_lib_LUnit</Package_File_Name>
     <Library_Version>1.9.17.5</Library_Version>
@@ -51,9 +51,8 @@ Documentation is available on https://lunit.astemes.com.</Description>
       <Copyright>Copyright (c) 2020, Astemes</Copyright>
       <Packager>Anton Sundqvist</Packager>
       <URL>https://lunit.astemes.com</URL>
-      <Release_Notes>Fix issue #27 - Improved results window for parameterized test addon. Clicking a parameter opens the Parameters.vi
-Fix issue #30 - Improved details to JUnit xml report format. This resolves issues with more strict JUnit xml report parsers, such as the &lt;i&gt;Dorny Test Reporter&lt;/i&gt;.
-Fix issue #31 - API now accepts a directory containing tests as input. This means that you do not need to organize tests in a LabVIEW project and can have LUnit run e.g. all tests in a &lt;i&gt;/tests&lt;/i&gt; directory. This works directly with existing CLI tools such as &lt;i&gt;LUnit CLI&lt;/i&gt; or &lt;i&gt;LUnit for GCLI&lt;/i&gt; without any additional updates. </Release_Notes>
+      <Release_Notes>Implement Issue #39 - Support relative paths for reports
+Implement Issue #41 - Support for plain description as option to diff tool output</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -423,7 +422,7 @@ Fix issue #31 - API now accepts a directory containing tests as input. This mean
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Fail If Equal.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>36C0E054626FF9C782BF2A3713AB0D06</GUID>
+      <GUID>70A321EACDB4BF28E9DC04E2C2D23A98</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -528,7 +527,7 @@ Fix issue #31 - API now accepts a directory containing tests as input. This mean
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Advanced Assertions\Fail If In Collection.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>920F2D6321CDF93FAB1F009D6FC2C55A</GUID>
+      <GUID>2DC5E9A392FCF7DD246B26EFDB833D83</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -563,7 +562,7 @@ Fix issue #31 - API now accepts a directory containing tests as input. This mean
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\API\LUnit Run Tests.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0AEB513FF95FB9BDE98C37F84168BAC1</GUID>
+      <GUID>A95475F911CC6A25A5DFA8F9517CA24A</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
