@@ -95,6 +95,15 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1342972432</Property>
 	</Item>
+	<Item Name="Get Use Diff Tool.vi" Type="VI" URL="../Get Use Diff Tool.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;I!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"J!)26%;7:G)'FO)%2F=W.S;8"U;7^O=T]!1E"Q!"Y!!"]&gt;1W^O:GFH&gt;8*B&gt;'FP&lt;C".97ZB:W6S,GRW9WRB=X-!'5.P&lt;G:J:X6S982J&lt;WYA47&amp;O97&gt;F=C"0&gt;81!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1"#1(!!(A!!(RV$&lt;WZG;7&gt;V=G&amp;U;7^O)%VB&lt;G&amp;H:8)O&lt;(:D&lt;'&amp;T=Q!91W^O:GFH&gt;8*B&gt;'FP&lt;C".97ZB:W6S)%FO!!"B!0!!$!!$!!1!"1!'!!1!"!!%!!1!"Q!%!!1!#!-!!(A!!!U)!!!!!!!!#1!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!!!!%!!!$1!!!!Q!!!!!!!!!!!!!!1!*!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342972432</Property>
+	</Item>
 	<Item Name="Set Dashed Tests Ignored.vi" Type="VI" URL="../Set Dashed Tests Ignored.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;C!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%*!=!!?!!!@(5.P&lt;G:J:X6S982J&lt;WYA47&amp;O97&gt;F=CZM&gt;G.M98.T!"F$&lt;WZG;7&gt;V=G&amp;U;7^O)%VB&lt;G&amp;H:8)A4X6U!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!&amp;%!B$EFO:W^S:3"%98.I:71`!!"#1(!!(A!!(RV$&lt;WZG;7&gt;V=G&amp;U;7^O)%VB&lt;G&amp;H:8)O&lt;(:D&lt;'&amp;T=Q!91W^O:GFH&gt;8*B&gt;'FP&lt;C".97ZB:W6S)%FO!!"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!=!#!-!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!1!!!!%!!!$1!!!!Q!!!!!!!!!!!!!!1!*!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -130,5 +139,14 @@
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1117782544</Property>
+	</Item>
+	<Item Name="Set Use Diff Tool.vi" Type="VI" URL="../Set Use Diff Tool.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;C!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%*!=!!?!!!@(5.P&lt;G:J:X6S982J&lt;WYA47&amp;O97&gt;F=CZM&gt;G.M98.T!"F$&lt;WZG;7&gt;V=G&amp;U;7^O)%VB&lt;G&amp;H:8)A4X6U!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!&amp;%!B$F6T:3"%;7:G)&amp;2P&lt;WQ`!!"#1(!!(A!!(RV$&lt;WZG;7&gt;V=G&amp;U;7^O)%VB&lt;G&amp;H:8)O&lt;(:D&lt;'&amp;T=Q!91W^O:GFH&gt;8*B&gt;'FP&lt;C".97ZB:W6S)%FO!!"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!=!#!-!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!1!!!!%!!!$1!!!!Q!!!!!!!!!!!!!!1!*!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342972432</Property>
 	</Item>
 </LVClass>
