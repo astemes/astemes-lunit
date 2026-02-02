@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2026-01-21 17:56:18" Creator="Anton Sundqvist" Comments="" ID="5150775f40437d482d94d7e2c1518574">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2026-02-02 09:38:09" Creator="Anton Sundqvist" Comments="" ID="6532d2746e804be0ed2bbc036ec85ab2">
   <Library_General_Settings>
     <Package_File_Name>Astemes_lib_LUnit</Package_File_Name>
     <Library_Version>1.9.17.5</Library_Version>
@@ -52,7 +52,8 @@ Documentation is available on https://lunit.astemes.com.</Description>
       <Packager>Anton Sundqvist</Packager>
       <URL>https://lunit.astemes.com</URL>
       <Release_Notes>Implement Issue #39 - Support relative paths for reports
-Implement Issue #41 - Support for plain description as option to diff tool output</Release_Notes>
+Implement Issue #41 - Support for plain description as option to diff tool output
+Minor improvements to menu structure</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -422,7 +423,7 @@ Implement Issue #41 - Support for plain description as option to diff tool outpu
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Fail If Equal.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>70A321EACDB4BF28E9DC04E2C2D23A98</GUID>
+      <GUID>F28CD09B54CDE48C9D62BDD7C27C86E5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -527,7 +528,7 @@ Implement Issue #41 - Support for plain description as option to diff tool outpu
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Advanced Assertions\Fail If In Collection.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2DC5E9A392FCF7DD246B26EFDB833D83</GUID>
+      <GUID>0745003629E4C9C2491B552C5604EE90</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -562,7 +563,7 @@ Implement Issue #41 - Support for plain description as option to diff tool outpu
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\API\LUnit Run Tests.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A95475F911CC6A25A5DFA8F9517CA24A</GUID>
+      <GUID>329408466EA06C897CBEFF7DE06B9645</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
