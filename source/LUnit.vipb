@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2026-02-02 09:38:09" Creator="Anton Sundqvist" Comments="" ID="6532d2746e804be0ed2bbc036ec85ab2">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2026-02-12 08:27:56" Creator="Anton Sundqvist" Comments="" ID="752e4a8a4f919e90d59a25b0e7a01ec9">
   <Library_General_Settings>
     <Package_File_Name>Astemes_lib_LUnit</Package_File_Name>
     <Library_Version>1.9.17.5</Library_Version>
@@ -51,9 +51,7 @@ Documentation is available on https://lunit.astemes.com.</Description>
       <Copyright>Copyright (c) 2020, Astemes</Copyright>
       <Packager>Anton Sundqvist</Packager>
       <URL>https://lunit.astemes.com</URL>
-      <Release_Notes>Implement Issue #39 - Support relative paths for reports
-Implement Issue #41 - Support for plain description as option to diff tool output
-Minor improvements to menu structure</Release_Notes>
+      <Release_Notes>Implement Issue #43 - Fix xml report inconsistency when using Skip.vi to</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -423,7 +421,7 @@ Minor improvements to menu structure</Release_Notes>
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Fail If Equal.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F28CD09B54CDE48C9D62BDD7C27C86E5</GUID>
+      <GUID>61AB86FB9C16956513153AB6B446F0F9</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -528,7 +526,7 @@ Minor improvements to menu structure</Release_Notes>
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Advanced Assertions\Fail If In Collection.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0745003629E4C9C2491B552C5604EE90</GUID>
+      <GUID>515CF4A83FE3099C98765421FCAF1988</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -563,7 +561,7 @@ Minor improvements to menu structure</Release_Notes>
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\API\LUnit Run Tests.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>329408466EA06C897CBEFF7DE06B9645</GUID>
+      <GUID>96D5053DDF35C35EED9F0D6A0DEA1BDF</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
