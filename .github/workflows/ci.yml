@@ -22,4 +22,4 @@ jobs:
     steps:
       - uses: astemes/astemes-github-actions/runLUnit@main
         with:
-          project-path: "source\\LUnit Framework.lvproj"
+          project-path: "tests"
