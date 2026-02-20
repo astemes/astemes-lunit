@@ -27,6 +27,7 @@
 				<Item Name="Test Case Test Double.lvclass" Type="LVClass" URL="../../tests/Test Doubles/Test Case Test Double/Test Case Test Double.lvclass"/>
 			</Item>
 			<Item Name="TestFodder" Type="Folder">
+				<Item Name="Skipped Test.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Skipped Test/Skipped Test.lvclass"/>
 				<Item Name="Broken Test.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Broken Test/Broken Test.lvclass"/>
 			</Item>
 			<Item Name="Advanced Asseritions Test.lvclass" Type="LVClass" URL="../../tests/Advanced Asseritions Test/Advanced Asseritions Test.lvclass"/>
