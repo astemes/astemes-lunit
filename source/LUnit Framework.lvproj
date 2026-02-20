@@ -30,7 +30,10 @@
 				<Item Name="Skipped Test.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Skipped Test/Skipped Test.lvclass"/>
 				<Item Name="Broken Test.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Broken Test/Broken Test.lvclass"/>
 				<Item Name="Fail.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Fail/Fail.lvclass"/>
+				<Item Name="Error.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Error/Error.lvclass"/>
 				<Item Name="Pass.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Pass/Pass.lvclass"/>
+				<Item Name="Setup Error.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Setup Error/Setup Error.lvclass"/>
+				<Item Name="Teardown Error.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Teardown Error/Teardown Error.lvclass"/>
 			</Item>
 			<Item Name="Advanced Asseritions Test.lvclass" Type="LVClass" URL="../../tests/Advanced Asseritions Test/Advanced Asseritions Test.lvclass"/>
 			<Item Name="Compare Assertion Test.lvclass" Type="LVClass" URL="../../tests/Compare Assertion Test/Compare Assertion Test.lvclass"/>
