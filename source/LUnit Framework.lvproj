@@ -467,7 +467,6 @@
 			<Item Name="Test Finder.lvclass" Type="LVClass" URL="../Framework/Test Finder/Test Finder.lvclass"/>
 			<Item Name="Single Thread Test Runner.lvclass" Type="LVClass" URL="../Framework/Single Thread Test Runner/Single Thread Test Runner.lvclass"/>
 			<Item Name="Parallell Test Runner.lvclass" Type="LVClass" URL="../Framework/Parallell Test Runner/Parallell Test Runner.lvclass"/>
-			<Item Name="Test Suite Factory.lvclass" Type="LVClass" URL="../Framework/Test Suite Factory/Test Suite Factory.lvclass"/>
 			<Item Name="Utilities.lvlib" Type="Library" URL="../Framework/Utilities/Utilities.lvlib"/>
 		</Item>
 		<Item Name="Examples" Type="Folder">
@@ -1214,7 +1213,7 @@
 				<Property Name="Source[42].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[42].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[42].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[42].itemID" Type="Ref">/My Computer/Framework/Test Suite Factory.lvclass/Private</Property>
+				<Property Name="Source[42].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Test Suite Factory.lvclass/Private</Property>
 				<Property Name="Source[42].type" Type="Str">Container</Property>
 				<Property Name="Source[43].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[43].Container.depDestIndex" Type="Int">0</Property>
@@ -1450,7 +1449,7 @@
 				<Property Name="Source[92].itemID" Type="Ref">/My Computer/Core/LUnit Test Case.lvclass/Name.vi</Property>
 				<Property Name="Source[92].type" Type="Str">VI</Property>
 				<Property Name="Source[93].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[93].itemID" Type="Ref">/My Computer/Framework/Test Suite Factory.lvclass</Property>
+				<Property Name="Source[93].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Test Suite Factory.lvclass</Property>
 				<Property Name="Source[93].properties[0].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[93].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[93].properties[1].type" Type="Str">Allow debugging</Property>
@@ -1459,13 +1458,13 @@
 				<Property Name="Source[93].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[93].type" Type="Str">Library</Property>
 				<Property Name="Source[94].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[94].itemID" Type="Ref">/My Computer/Framework/Test Suite Factory.lvclass/Suite from Library.vi</Property>
+				<Property Name="Source[94].itemID" Type="Ref">/My Computer/Framework/Test Finder.lvclass/Suite from Library.vi</Property>
 				<Property Name="Source[94].type" Type="Str">VI</Property>
 				<Property Name="Source[95].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[95].itemID" Type="Ref">/My Computer/Framework/Test Suite Factory.lvclass/Suite from Project.vi</Property>
+				<Property Name="Source[95].itemID" Type="Ref">/My Computer/Framework/Test Finder.lvclass/Suite from Project.vi</Property>
 				<Property Name="Source[95].type" Type="Str">VI</Property>
 				<Property Name="Source[96].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[96].itemID" Type="Ref">/My Computer/Framework/Test Suite Factory.lvclass/Suite from Test Case Path.vi</Property>
+				<Property Name="Source[96].itemID" Type="Ref">/My Computer/Framework/Test Finder.lvclass/Suite from Test Case Path.vi</Property>
 				<Property Name="Source[96].type" Type="Str">VI</Property>
 				<Property Name="Source[97].destinationIndex" Type="Int">13</Property>
 				<Property Name="Source[97].itemID" Type="Ref">/My Computer/Core/Advanced Assertions.lvlib</Property>
