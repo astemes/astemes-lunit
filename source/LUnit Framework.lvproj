@@ -40,6 +40,7 @@
 			<Item Name="Test Case Assertions Test.lvclass" Type="LVClass" URL="../../tests/Test Case Assertion Tests/Test Case Assertions Test.lvclass"/>
 			<Item Name="Test Case Test.lvclass" Type="LVClass" URL="../../tests/Test Case Test/Test Case Test.lvclass"/>
 			<Item Name="Test FInder Test.lvclass" Type="LVClass" URL="../../tests/Test Finder Test/Test FInder Test.lvclass"/>
+			<Item Name="Test Method Finding Test.lvclass" Type="LVClass" URL="../../tests/Test Method Finding Test/Test Method Finding Test.lvclass"/>
 			<Item Name="Test Runner Test.lvclass" Type="LVClass" URL="../../tests/Test Runner Test/Test Runner Test.lvclass"/>
 			<Item Name="Test Suite Enumeration Test.lvclass" Type="LVClass" URL="../../tests/Test Suite Enumeration Test/Test Suite Enumeration Test.lvclass"/>
 			<Item Name="Text Report Test.lvclass" Type="LVClass" URL="../../tests/Text Report Test/Text Report Test.lvclass"/>
