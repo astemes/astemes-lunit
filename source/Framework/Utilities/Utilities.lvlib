@@ -9,4 +9,5 @@
 </Property>
 	<Item Name="Describe Comparison.vi" Type="VI" URL="../Describe Comparison.vi"/>
 	<Item Name="Describe Variant.vi" Type="VI" URL="../Describe Variant.vi"/>
+	<Item Name="Platform Specific Directory Separator.vi" Type="VI" URL="../Platform Specific Directory Separator.vi"/>
 </Library>
