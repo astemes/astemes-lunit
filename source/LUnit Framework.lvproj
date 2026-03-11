@@ -733,6 +733,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Append Result.vi" Type="VI" URL="../Core/LUnit Test Case/Private/Append Result.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LUnit" Type="Source Distribution">
@@ -881,7 +882,7 @@
 				<Property Name="Source[111].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[111].type" Type="Str">VI</Property>
 				<Property Name="Source[112].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[112].itemID" Type="Ref">/My Computer/Core/Result.lvlib/Assertion Type.ctl</Property>
+				<Property Name="Source[112].itemID" Type="Ref"></Property>
 				<Property Name="Source[112].type" Type="Str">VI</Property>
 				<Property Name="Source[113].destinationIndex" Type="Int">9</Property>
 				<Property Name="Source[113].itemID" Type="Ref">/My Computer/Core/Result.lvlib/Result.ctl</Property>
