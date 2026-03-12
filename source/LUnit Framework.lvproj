@@ -733,7 +733,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Append Result.vi" Type="VI" URL="../Core/LUnit Test Case/Private/Append Result.vi"/>
+			<Item Name="Get Plugin Directory Path.vi" Type="VI" URL="../User Interface/Support/Get Plugin Directory Path.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LUnit" Type="Source Distribution">
@@ -1105,7 +1105,7 @@
 				<Property Name="Source[43].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[43].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[43].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[43].itemID" Type="Ref">/My Computer/Core/LUnit Test Suite.lvclass/Private</Property>
+				<Property Name="Source[43].itemID" Type="Ref"></Property>
 				<Property Name="Source[43].type" Type="Str">Container</Property>
 				<Property Name="Source[44].destinationIndex" Type="Int">9</Property>
 				<Property Name="Source[44].itemID" Type="Ref">/My Computer/Core/LUnit Test Suite.lvclass/Create.vi</Property>
@@ -1122,7 +1122,7 @@
 				<Property Name="Source[48].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[48].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[48].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[48].itemID" Type="Ref">/My Computer/Core/Execution API.lvclass/Private</Property>
+				<Property Name="Source[48].itemID" Type="Ref"></Property>
 				<Property Name="Source[48].type" Type="Str">Container</Property>
 				<Property Name="Source[49].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[49].Container.applyInclusion" Type="Bool">true</Property>
@@ -1315,10 +1315,10 @@
 				<Property Name="Source[86].itemID" Type="Ref">/My Computer/Core/LUnit Test Suite.lvclass/Name.vi</Property>
 				<Property Name="Source[86].type" Type="Str">VI</Property>
 				<Property Name="Source[87].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[87].itemID" Type="Ref">/My Computer/Core/LUnit Test Suite.lvclass/Private/Recursive List.vi</Property>
+				<Property Name="Source[87].itemID" Type="Ref"></Property>
 				<Property Name="Source[87].type" Type="Str">VI</Property>
 				<Property Name="Source[88].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[88].itemID" Type="Ref">/My Computer/Core/LUnit Test Suite.lvclass/Private/Next Runnable in Suite.vi</Property>
+				<Property Name="Source[88].itemID" Type="Ref"></Property>
 				<Property Name="Source[88].type" Type="Str">VI</Property>
 				<Property Name="Source[89].destinationIndex" Type="Int">9</Property>
 				<Property Name="Source[89].itemID" Type="Ref">/My Computer/Core/LUnit Test Suite.lvclass/Next.vi</Property>
