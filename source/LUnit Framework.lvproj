@@ -34,6 +34,9 @@
 				<Item Name="Setup Error.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Setup Error/Setup Error.lvclass"/>
 				<Item Name="Teardown Error.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Teardown Error/Teardown Error.lvclass"/>
 			</Item>
+			<Item Name="Helpers" Type="Folder">
+				<Item Name="Run All.vi" Type="VI" URL="../../tests/Run All.vi"/>
+			</Item>
 			<Item Name="Advanced Asseritions Test.lvclass" Type="LVClass" URL="../../tests/Advanced Asseritions Test/Advanced Asseritions Test.lvclass"/>
 			<Item Name="Compare Assertion Test.lvclass" Type="LVClass" URL="../../tests/Compare Assertion Test/Compare Assertion Test.lvclass"/>
 			<Item Name="Configuration Manager Test.lvclass" Type="LVClass" URL="../../tests/Configuration Manager Test/Configuration Manager Test.lvclass"/>
@@ -556,7 +559,14 @@
 		<Item Name="Project Providers" Type="Folder">
 			<Item Name="Project Provider.lvlib" Type="Library" URL="../Project Provider/Project Provider.lvlib"/>
 		</Item>
-		<Item Name="astemes-string-diff-utils" Type="Folder"/>
+		<Item Name="astemes-string-diff-utils" Type="Folder">
+			<Item Name="Diff Tool.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Diff Tool.vi"/>
+			<Item Name="Find Common Chars.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find Common Chars.vi"/>
+			<Item Name="Find Added Sections.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find Added Sections.vi"/>
+			<Item Name="Find Index to Insert at.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find Index to Insert at.vi"/>
+			<Item Name="Find All Highlights.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find All Highlights.vi"/>
+			<Item Name="Find Highlights.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find Highlights.vi"/>
+		</Item>
 		<Item Name="LICENSE" Type="Document" URL="../../LICENSE"/>
 		<Item Name="Post-Install Custom Action.vi" Type="VI" URL="../User Interface/Support/Post-Install Custom Action.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -724,12 +734,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Diff Tool.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Diff Tool.vi"/>
-			<Item Name="Find Common Chars.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find Common Chars.vi"/>
-			<Item Name="Find Added Sections.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find Added Sections.vi"/>
-			<Item Name="Find Index to Insert at.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find Index to Insert at.vi"/>
-			<Item Name="Find All Highlights.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find All Highlights.vi"/>
-			<Item Name="Find Highlights.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find Highlights.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LUnit" Type="Source Distribution">
