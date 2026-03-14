@@ -22,7 +22,6 @@
 				<Item Name="Comparison Test Double.lvclass" Type="LVClass" URL="../../tests/Comparison Test Double/Comparison Test Double.lvclass"/>
 				<Item Name="Light Test Case Double Copy.lvclass" Type="LVClass" URL="../../tests/Test Doubles/Light Test Case Double Copy/Light Test Case Double Copy.lvclass"/>
 				<Item Name="Light Test Case Double.lvclass" Type="LVClass" URL="../../tests/Test Doubles/Test Case Test Double Child/Light Test Case Double.lvclass"/>
-				<Item Name="Mock Report.lvclass" Type="LVClass" URL="../../tests/Test Doubles/Mock Report/Mock Report.lvclass"/>
 				<Item Name="Mock Result Observer.lvclass" Type="LVClass" URL="../../tests/Mock Result Observer/Mock Result Observer.lvclass"/>
 				<Item Name="Test Case Test Double.lvclass" Type="LVClass" URL="../../tests/Test Doubles/Test Case Test Double/Test Case Test Double.lvclass"/>
 			</Item>
@@ -41,7 +40,6 @@
 			<Item Name="Error Checking Test.lvclass" Type="LVClass" URL="../../tests/Error Checking Test/Error Checking Test.lvclass"/>
 			<Item Name="Error Handler Tests.lvclass" Type="LVClass" URL="../../tests/Error Handler Tests/Error Handler Tests.lvclass"/>
 			<Item Name="LUnit Test Suite Tests.lvclass" Type="LVClass" URL="../../tests/Test Suite Tests/LUnit Test Suite Tests.lvclass"/>
-			<Item Name="Report Generator Test.lvclass" Type="LVClass" URL="../../tests/Report Test/Report Generator Test.lvclass"/>
 			<Item Name="Result Model Result Recording Test.lvclass" Type="LVClass" URL="../../tests/Result Model Result Recording Test/Result Model Result Recording Test.lvclass"/>
 			<Item Name="Result Model Statistics.lvclass" Type="LVClass" URL="../../tests/Result Model Statistics Test/Result Model Statistics.lvclass"/>
 			<Item Name="Result Model Test Enumeration.lvclass" Type="LVClass" URL="../../tests/Result Model Tests/Result Model Test Enumeration.lvclass"/>
