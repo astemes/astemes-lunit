@@ -569,6 +569,8 @@
 		</Item>
 		<Item Name="LICENSE" Type="Document" URL="../../LICENSE"/>
 		<Item Name="Post-Install Custom Action.vi" Type="VI" URL="../User Interface/Support/Post-Install Custom Action.vi"/>
+		<Item Name="Cluster Assertion Test.lvclass" Type="LVClass" URL="../../tests/Cluster Assertion Test/Cluster Assertion Test.lvclass"/>
+		<Item Name="Untitled 4.vi" Type="VI" URL="../Core/Advanced Assertions/Untitled 4.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
