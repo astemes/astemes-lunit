@@ -9,4 +9,5 @@
 </Property>
 	<Item Name="Describe Comparison.vi" Type="VI" URL="../Describe Comparison.vi"/>
 	<Item Name="Describe Variant.vi" Type="VI" URL="../Describe Variant.vi"/>
+	<Item Name="Get Tag Content.vi" Type="VI" URL="../Get Tag Content.vi"/>
 </Library>

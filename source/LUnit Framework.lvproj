@@ -568,7 +568,9 @@
 			<Item Name="Find Highlights.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find Highlights.vi"/>
 		</Item>
 		<Item Name="LICENSE" Type="Document" URL="../../LICENSE"/>
+		<Item Name="Describe Cluster.vi" Type="VI" URL="../Core/Advanced Assertions/Describe Cluster.vi"/>
 		<Item Name="Post-Install Custom Action.vi" Type="VI" URL="../User Interface/Support/Post-Install Custom Action.vi"/>
+		<Item Name="Describe Variant Test.lvclass" Type="LVClass" URL="../../tests/Describe Variant Test/Describe Variant Test.lvclass"/>
 		<Item Name="Cluster Assertion Test.lvclass" Type="LVClass" URL="../../tests/Cluster Assertion Test/Cluster Assertion Test.lvclass"/>
 		<Item Name="Untitled 4.vi" Type="VI" URL="../Core/Advanced Assertions/Untitled 4.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -725,6 +727,18 @@
 				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 				<Item Name="Test Case.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/Test Case.lvclass"/>
 				<Item Name="LUnit Runnable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/LUnit Runnable.lvclass"/>
+				<Item Name="Test Case.ctl" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Test Case.lvclass/Test Case.ctl"/>
+				<Item Name="Pass If.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Pass If.vi"/>
+				<Item Name="Pass If Equal.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Pass If Equal.vim"/>
+				<Item Name="Fail If In Collection.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/Advanced Assertions/Fail If In Collection.vim"/>
+				<Item Name="Fail If.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If.vi"/>
+				<Item Name="Pass If In Collection.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/Advanced Assertions/Pass If In Collection.vim"/>
+				<Item Name="Compare Variants.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Compare Variants.vi"/>
+				<Item Name="Describe Comparison.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Describe Comparison.vi"/>
+				<Item Name="Append Pass Result.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Append Pass Result.vi"/>
+				<Item Name="Append Fail Result.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Append Fail Result.vi"/>
+				<Item Name="Fail If Equal.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If Equal.vim"/>
+				<Item Name="Fail If Error.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If Error.vi"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -736,6 +750,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Append Result.vi" Type="VI" URL="../Core/LUnit Test Case/Private/Append Result.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LUnit" Type="Source Distribution">
