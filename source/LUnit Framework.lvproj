@@ -57,6 +57,7 @@
 			<Item Name="Text Report Test.lvclass" Type="LVClass" URL="../../tests/Text Report Test/Text Report Test.lvclass"/>
 			<Item Name="API Pass Output.lvclass" Type="LVClass" URL="../../tests/API Pass Output/API Pass Output.lvclass"/>
 			<Item Name="XML Report Test.lvclass" Type="LVClass" URL="../../tests/XML Report Test/XML Report Test.lvclass"/>
+			<Item Name="Describe Variant Test.lvclass" Type="LVClass" URL="../../tests/Describe Variant Test/Describe Variant Test.lvclass"/>
 		</Item>
 		<Item Name="Excluded Dependencies" Type="Folder">
 			<Item Name="Project Provider" Type="Folder">
@@ -569,7 +570,6 @@
 		</Item>
 		<Item Name="LICENSE" Type="Document" URL="../../LICENSE"/>
 		<Item Name="Post-Install Custom Action.vi" Type="VI" URL="../User Interface/Support/Post-Install Custom Action.vi"/>
-		<Item Name="Describe Variant Test.lvclass" Type="LVClass" URL="../../tests/Describe Variant Test/Describe Variant Test.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -730,10 +730,6 @@
 				<Item Name="Fail If In Collection.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/Advanced Assertions/Fail If In Collection.vim"/>
 				<Item Name="Fail If.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If.vi"/>
 				<Item Name="Pass If In Collection.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/Advanced Assertions/Pass If In Collection.vim"/>
-				<Item Name="Compare Variants.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Compare Variants.vi"/>
-				<Item Name="Describe Comparison.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Describe Comparison.vi"/>
-				<Item Name="Append Pass Result.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Append Pass Result.vi"/>
-				<Item Name="Append Fail Result.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Append Fail Result.vi"/>
 				<Item Name="Fail If Equal.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If Equal.vim"/>
 				<Item Name="Fail If Error.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If Error.vi"/>
 			</Item>
