@@ -11,7 +11,4 @@
 	<Item Name="Fail If In Collection.vim" Type="VI" URL="../Fail If In Collection.vim"/>
 	<Item Name="Pass If Matching String.vi" Type="VI" URL="../Pass If Matching String.vi"/>
 	<Item Name="Fail If Matching String.vi" Type="VI" URL="../Fail If Matching String.vi"/>
-	<Item Name="Pass If Equal Cluster.vim" Type="VI" URL="../Pass If Equal Cluster.vim"/>
-	<Item Name="Cluster to Array of Variants.vi" Type="VI" URL="../Cluster to Array of Variants.vi"/>
-	<Item Name="Get Tag Content.vi" Type="VI" URL="../Get Tag Content.vi"/>
 </Library>
