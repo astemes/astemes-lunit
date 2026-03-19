@@ -568,11 +568,8 @@
 			<Item Name="Find Highlights.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find Highlights.vi"/>
 		</Item>
 		<Item Name="LICENSE" Type="Document" URL="../../LICENSE"/>
-		<Item Name="Describe Cluster.vi" Type="VI" URL="../Core/Advanced Assertions/Describe Cluster.vi"/>
 		<Item Name="Post-Install Custom Action.vi" Type="VI" URL="../User Interface/Support/Post-Install Custom Action.vi"/>
 		<Item Name="Describe Variant Test.lvclass" Type="LVClass" URL="../../tests/Describe Variant Test/Describe Variant Test.lvclass"/>
-		<Item Name="Cluster Assertion Test.lvclass" Type="LVClass" URL="../../tests/Cluster Assertion Test/Cluster Assertion Test.lvclass"/>
-		<Item Name="Untitled 4.vi" Type="VI" URL="../Core/Advanced Assertions/Untitled 4.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -750,7 +747,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Append Result.vi" Type="VI" URL="../Core/LUnit Test Case/Private/Append Result.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LUnit" Type="Source Distribution">
