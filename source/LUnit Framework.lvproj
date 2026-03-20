@@ -33,6 +33,7 @@
 				<Item Name="Pass.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Pass/Pass.lvclass"/>
 				<Item Name="Setup Error.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Setup Error/Setup Error.lvclass"/>
 				<Item Name="Teardown Error.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Teardown Error/Teardown Error.lvclass"/>
+				<Item Name="Dummy Class.lvclass" Type="LVClass" URL="../../tests/Test Fodder/Dummy Class/Dummy Class.lvclass"/>
 			</Item>
 			<Item Name="Helpers" Type="Folder">
 				<Item Name="Run All.vi" Type="VI" URL="../../tests/Run All.vi"/>
@@ -724,14 +725,6 @@
 				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 				<Item Name="Test Case.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/Test Case.lvclass"/>
 				<Item Name="LUnit Runnable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/LUnit Runnable.lvclass"/>
-				<Item Name="Test Case.ctl" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Test Case.lvclass/Test Case.ctl"/>
-				<Item Name="Pass If.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Pass If.vi"/>
-				<Item Name="Pass If Equal.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Pass If Equal.vim"/>
-				<Item Name="Fail If In Collection.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/Advanced Assertions/Fail If In Collection.vim"/>
-				<Item Name="Fail If.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If.vi"/>
-				<Item Name="Pass If In Collection.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/Advanced Assertions/Pass If In Collection.vim"/>
-				<Item Name="Fail If Equal.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If Equal.vim"/>
-				<Item Name="Fail If Error.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If Error.vi"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
