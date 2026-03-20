@@ -29,10 +29,13 @@ Keep in mind that tests should not be included in builds and there should be no 
 
 Now you have a test case and may add some test methods to the test case.
 A test method is a vi belonging to the test case class and will get executed by the framework.
-The name of the vi **must** start with the four letters "test" (case insensitive).
-It is **not** recommended to make test vi:s *dynamic dispatch*.
 
-To create a new test method, right-click on the Test Static Test Method.vit and select ``New from Template``.
+If you are using LUnit version 1.x, the name of the vi **must** start with the four letters "test" (case insensitive).
+In LUnit 2.0, this requirement has been relaxed and any public vi in a test case class is considered a test and enumerated in the UI.
+If the vi contains assertions, it will report results when the test is run.
+Helper vi:s should be made `private` within the test case class, which will avoid them being shown and run by the UI.
+It is **not** recommended to make test vi:s *dynamic dispatch*.
+To create a new test method, right-click on the _Test Method Template.vit_ and select ``New from Template``.
 
 ![New from template](img/new_static_from_template.png)
 
@@ -51,7 +54,7 @@ The result of each test is determined using assertions.
 There is a set of assertions to choose from, as shown in the figure above, and the names should be self explanatory.
 One test method may contain multiple assertions and the result from each assertion will show up in the result view.
 
-One pro-tip is that the ``Pass if Equal.vi`` assertion also works well for array data types.
+One pro-tip is that the ``Pass if Equal.vi`` assertion also works well for array data types, clusters and data classes.
 The result of comparing arrays will show up in the result view as shown below.
 
 ![Comparing Arrays](img/array_comparison.jpg)
@@ -61,6 +64,9 @@ Please note that the ``Pass if Equal.vi`` assertion will fail if either the type
 ## Running the Test Case
 
 You can run a single test vi (using the Run Arrow) and it will run and show the user interface with the results of the test.
+When run this way, the vi is actually run twice. 
+First once, which causes the UI to launch and then a second time which is the actual test execution.
+In this way, the UI can run the `Setup.vi` dynamic dispatch, the test method and then finally the `Teardown.vi` method even when the test is not started from the UI.
 
 Starting from version 1.10 of LUnit, a Quick Drop plugin is available which allows running tests using a Quick Drop shortcut.
 From Quick Drop press ``Ctrl + L`` to run all tests within the current project.
@@ -83,7 +89,7 @@ As the test is run, the results are also shown as visual icons overlays in the p
 ## Adding utility VI:s
 
 It is common that code is reused between tests belonging to a test case class, and could then be placed in subVI:s or so called test utility vi:s.
-If you create such vi:s belonging to the class, make sure to restrict the access scope (*i.e* make the vi:s ``protected`` or ``protected``), as the UI enumerates all public vi:s in the class.
+If you create such vi:s belonging to the class, make sure to restrict the access scope (*i.e* make the vi:s ``private`` or ``protected``), as the UI enumerates all public vi:s in the class.
 
 ## Using the Setup and Teardown methods
 

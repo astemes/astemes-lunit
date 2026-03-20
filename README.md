@@ -50,8 +50,10 @@ The release contains a VIPM package which is installed using VIPM.
 Once installed, LUnit is integrated into the LabVIEW development environment and the functionality is accessed through the Tools->LUnit menu.
 From the menu, you may create a new tests or open the LUnit UI to run tests.
 
-When you have created a Test Case class, you can create new test VI:s using the provided template or by creating static or dynamic dispatch VI:s on the Test Case class.
-Static dispatch is recommended, unless you are using the test inheritance feature, as they have less overhead and does not lock the Test Case classes when the UI is loaded.
+When you have created a Test Case class, you can create new test VI:s using the provided template or by creating public vi:s belonging to the Test Case class.
+Static dispatch is recommended, unless you are using the test inheritance add-on, as they have less overhead and does not lock the Test Case classes when the UI is loaded.
+As of LUnit 2.0, the tests can be named freely without any required convention.
+For compatibility with LUnit 1.x, the test vi:s must begin with the letters `test`.
 
 All tests within a Test Case class may executed from the project explorer, by right-clicking on a Test Case and selecting `Run Test Case...` from the menu.
 As of LUnit version 1.5, a test VI may be executed by simply running it in LabVIEW using the run arrow.
@@ -76,11 +78,14 @@ If you find it useful, please consider starring the project on GitHub and VIPM.
 
 ## Versioning
 
+With the release of LUnit 2.0, the requirement for test names to begin with the prefix `test` was removed.
+This change is non breaking, and LUnit 2.x can still run tests developed in LUnit 1.x and vice versa.
+However, tests without the `test` prefix will not be discovered in LUnit 1.x and the toolkit will need to be updated to run these.
+
 LUnit uses semantic version in the format major.minor.fix.build. 
 The build version is of little significance as it only denotes the number of the build.
-The fix indicates a bug fix, minor feature, or other improvement. 
-As new major features are released or the number of minor feature releases accumulates, the minor version is incremented.
-Minor version updates are uploaded to VIPM and NI Tools Network after an initial testing period.
+The fix indicates a bug fix, minor feature, or other improvement and are continuously released on github using CD. 
+Minor version updates are uploaded to VIPM after an initial testing period.
 These updates should be non-breaking and should not require any changes to the client code.
 A major version update would mean that code developed using an earlier version might need modification.
 There are currently no plans to make any major updates.

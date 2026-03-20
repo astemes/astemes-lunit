@@ -27,7 +27,7 @@ These methods are executed before and after each test method in the test case.
 
 A test method is a VI belonging to a class inheriting from the Test Case class.
 It is not recommended to make test methods have Dynamic Dispatch terminals.
-As of version 1.8, it is not longer required for test method names to start with the letters `test`.
+As of version 2.0, it is not longer required for test method names to start with the letters `test` and any public method is considered a test.
 The connector pane of the test case must use the 4-2-2-4 pattern and have the standard connectors for static dispatch methods (the error input being optional as there will never be any upstreams errors coming into the test vi).
 
 ![Test method connector pane](img/test_method_connector_pane.png)

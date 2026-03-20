@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2026-02-12 08:27:56" Creator="Anton Sundqvist" Comments="" ID="752e4a8a4f919e90d59a25b0e7a01ec9">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2026-03-20 20:53:20" Creator="Anton Sundqvist" Comments="" ID="ef949d6ddffbf3eebb183239369970a7">
   <Library_General_Settings>
     <Package_File_Name>Astemes_lib_LUnit</Package_File_Name>
     <Library_Version>1.9.17.5</Library_Version>
@@ -51,7 +51,23 @@ Documentation is available on https://lunit.astemes.com.</Description>
       <Copyright>Copyright (c) 2020, Astemes</Copyright>
       <Packager>Anton Sundqvist</Packager>
       <URL>https://lunit.astemes.com</URL>
-      <Release_Notes>Implement Issue #43 - Fix xml report inconsistency when using Skip.vi to</Release_Notes>
+      <Release_Notes>With the release of LUnit 2.0, the requirement for test names to begin with the prefix `test` was removed. This has been the most asked for feature since the release of the toolkit, and now we have a stable implementation without compromising performance.
+
+This change is non breaking, and LUnit 2.x can still run tests developed in LUnit 1.x and vice versa.
+However, tests without the `test` prefix will not be discovered in LUnit 1.x and the toolkit will need to be updated to run these.
+
+Fix issue #12, #37 - Remove requirement for "test" prefix for test methods
+Fix issue #42 - Inconsisten aggregated results when broken test run from API
+Fix Issue #43 - Fix xml report inconsistency when using Skip.vi to
+Fix issue #46 - Limit recursion depth when using diff tool on large data structures
+Fix issue #47 - Edge case where running a vi could cause results to be reported twice
+Fix issue #48 - Edge case where modal window could prevent shift press from being captured by UI
+Fix issue #49 - Test ordering in UI reflects ordering in Tes Case lvclass
+Fix issue #50 - Improved readability of descriptions when comparing clusters - no more xml mess
+Fix issue #52 - Support for running only failed methods using the parameterized test add-on
+
+Additionally, the test discovery has been improved significantly which makes the UI even snappier.
+The improved test cache mechanism improves load time for the Parameterized add-on.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -421,7 +437,7 @@ Documentation is available on https://lunit.astemes.com.</Description>
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Fail If Equal.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>61AB86FB9C16956513153AB6B446F0F9</GUID>
+      <GUID>8A592DAB8D5EB5B7BC3F12807BE17EC1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -526,7 +542,7 @@ Documentation is available on https://lunit.astemes.com.</Description>
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Advanced Assertions\Fail If In Collection.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>515CF4A83FE3099C98765421FCAF1988</GUID>
+      <GUID>E461111BCF5717D1D7BE289B4302C2FB</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -561,7 +577,7 @@ Documentation is available on https://lunit.astemes.com.</Description>
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\API\LUnit Run Tests.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>96D5053DDF35C35EED9F0D6A0DEA1BDF</GUID>
+      <GUID>3AF462870995E5899EC5EB63FC3F6B96</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
