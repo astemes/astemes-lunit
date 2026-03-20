@@ -2,5 +2,3 @@ LUnit UI
 Run All Tests in Project
 -
 New Test Case
--
-Enable Eager Loading

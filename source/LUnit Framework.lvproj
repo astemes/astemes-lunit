@@ -537,9 +537,6 @@
 				</Item>
 				<Item Name="New Test Case.lvlib" Type="Library" URL="../Menu/Tools Menu/New Test Case/New Test Case.lvlib"/>
 				<Item Name="_Set Test Path.vi" Type="VI" URL="../Menu/Tools Menu/_Set Test Path.vi"/>
-				<Item Name="Enable Eager Loading.vi" Type="VI" URL="../Menu/Tools Menu/Enable Eager Loading.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
 				<Item Name="Tools Menu Layout.txt" Type="Document" URL="../Menu/Tools Menu/Tools Menu Layout.txt"/>
 				<Item Name="Run All Tests in Project.vi" Type="VI" URL="../Menu/Tools Menu/Run All Tests in Project.vi">
 					<Property Name="marked" Type="Int">0</Property>
@@ -930,7 +927,7 @@
 				<Property Name="Source[18].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[18].type" Type="Str">Library</Property>
 				<Property Name="Source[19].destinationIndex" Type="Int">4</Property>
-				<Property Name="Source[19].itemID" Type="Ref">/My Computer/Menu/Tools Menu/Enable Eager Loading.vi</Property>
+				<Property Name="Source[19].itemID" Type="Ref"></Property>
 				<Property Name="Source[19].properties[0].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[19].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[19].propertiesCount" Type="Int">1</Property>
