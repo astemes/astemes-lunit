@@ -42,7 +42,6 @@
 			<Item Name="Compare Assertion Test.lvclass" Type="LVClass" URL="../../tests/Compare Assertion Test/Compare Assertion Test.lvclass"/>
 			<Item Name="Configuration Manager Test.lvclass" Type="LVClass" URL="../../tests/Configuration Manager Test/Configuration Manager Test.lvclass"/>
 			<Item Name="Error Checking Test.lvclass" Type="LVClass" URL="../../tests/Error Checking Test/Error Checking Test.lvclass"/>
-			<Item Name="Error Handler Tests.lvclass" Type="LVClass" URL="../../tests/Error Handler Tests/Error Handler Tests.lvclass"/>
 			<Item Name="LUnit Test Suite Tests.lvclass" Type="LVClass" URL="../../tests/Test Suite Tests/LUnit Test Suite Tests.lvclass"/>
 			<Item Name="Result Model Result Recording Test.lvclass" Type="LVClass" URL="../../tests/Result Model Result Recording Test/Result Model Result Recording Test.lvclass"/>
 			<Item Name="Result Model Statistics.lvclass" Type="LVClass" URL="../../tests/Result Model Statistics Test/Result Model Statistics.lvclass"/>
@@ -479,11 +478,11 @@
 			<Item Name="Result Observer.lvclass" Type="LVClass" URL="../Framework/Result Observer/Result Observer.lvclass"/>
 			<Item Name="Test Runner.lvclass" Type="LVClass" URL="../Framework/Test Runner/Test Runner.lvclass"/>
 			<Item Name="Report Interface.lvclass" Type="LVClass" URL="../Framework/Report Interface/Report Interface.lvclass"/>
+			<Item Name="Report Plugin.lvclass" Type="LVClass" URL="../Framework/Report Plugin/Report Plugin.lvclass"/>
 			<Item Name="Test Finder.lvclass" Type="LVClass" URL="../Framework/Test Finder/Test Finder.lvclass"/>
 			<Item Name="Single Thread Test Runner.lvclass" Type="LVClass" URL="../Framework/Single Thread Test Runner/Single Thread Test Runner.lvclass"/>
 			<Item Name="Parallell Test Runner.lvclass" Type="LVClass" URL="../Framework/Parallell Test Runner/Parallell Test Runner.lvclass"/>
 			<Item Name="Utilities.lvlib" Type="Library" URL="../Framework/Utilities/Utilities.lvlib"/>
-			<Item Name="Report Generation.lvlib" Type="Library" URL="../Framework/Report Generation.lvlib"/>
 		</Item>
 		<Item Name="Examples" Type="Folder">
 			<Item Name="API Demo" Type="Folder">
@@ -512,7 +511,6 @@
 			<Item Name="Support" Type="Folder">
 				<Item Name="Configuration Manager.lvclass" Type="LVClass" URL="../User Interface/Configuration Manager/Configuration Manager.lvclass"/>
 				<Item Name="Paths.lvlib" Type="Library" URL="../User Interface/Support/Paths.lvlib"/>
-				<Item Name="Process.lvclass" Type="LVClass" URL="../User Interface/Process/Process.lvclass"/>
 			</Item>
 			<Item Name="Plugin Loader.lvclass" Type="LVClass" URL="../User Interface/Plugin Loader/Plugin Loader.lvclass"/>
 			<Item Name="Execution UI.lvclass" Type="LVClass" URL="../User Interface/Execution UI/Execution UI.lvclass"/>
@@ -1022,7 +1020,7 @@
 				<Property Name="Source[31].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[31].type" Type="Str">Container</Property>
 				<Property Name="Source[32].destinationIndex" Type="Int">7</Property>
-				<Property Name="Source[32].itemID" Type="Ref">/My Computer/User Interface/Support/Process.lvclass</Property>
+				<Property Name="Source[32].itemID" Type="Ref"></Property>
 				<Property Name="Source[32].type" Type="Str">Library</Property>
 				<Property Name="Source[33].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[33].Container.applyInclusion" Type="Bool">true</Property>
@@ -1256,13 +1254,13 @@
 				<Property Name="Source[76].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[76].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[76].destinationIndex" Type="Int">7</Property>
-				<Property Name="Source[76].itemID" Type="Ref">/My Computer/User Interface/Support/Process.lvclass/Protected</Property>
+				<Property Name="Source[76].itemID" Type="Ref"></Property>
 				<Property Name="Source[76].type" Type="Str">Container</Property>
 				<Property Name="Source[77].destinationIndex" Type="Int">7</Property>
 				<Property Name="Source[77].itemID" Type="Ref">/My Computer/User Interface/Plugin Loader.lvclass/Load Plugin.vi</Property>
 				<Property Name="Source[77].type" Type="Str">VI</Property>
 				<Property Name="Source[78].destinationIndex" Type="Int">7</Property>
-				<Property Name="Source[78].itemID" Type="Ref">/My Computer/User Interface/Support/Process.lvclass/Handle Errors.vi</Property>
+				<Property Name="Source[78].itemID" Type="Ref">/My Computer/User Interface/Execution UI.lvclass/Private/Handle Errors.vi</Property>
 				<Property Name="Source[78].type" Type="Str">VI</Property>
 				<Property Name="Source[79].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[79].Container.depDestIndex" Type="Int">0</Property>
