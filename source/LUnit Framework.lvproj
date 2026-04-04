@@ -475,10 +475,9 @@
 		</Item>
 		<Item Name="Framework" Type="Folder">
 			<Item Name="Plugin.lvclass" Type="LVClass" URL="../Framework/Plugin/Plugin.lvclass"/>
+			<Item Name="Report Plugin.lvclass" Type="LVClass" URL="../Framework/Report Plugin/Report Plugin.lvclass"/>
 			<Item Name="Result Observer.lvclass" Type="LVClass" URL="../Framework/Result Observer/Result Observer.lvclass"/>
 			<Item Name="Test Runner.lvclass" Type="LVClass" URL="../Framework/Test Runner/Test Runner.lvclass"/>
-			<Item Name="Report Interface.lvclass" Type="LVClass" URL="../Framework/Report Interface/Report Interface.lvclass"/>
-			<Item Name="Report Plugin.lvclass" Type="LVClass" URL="../Framework/Report Plugin/Report Plugin.lvclass"/>
 			<Item Name="Test Finder.lvclass" Type="LVClass" URL="../Framework/Test Finder/Test Finder.lvclass"/>
 			<Item Name="Single Thread Test Runner.lvclass" Type="LVClass" URL="../Framework/Single Thread Test Runner/Single Thread Test Runner.lvclass"/>
 			<Item Name="Parallell Test Runner.lvclass" Type="LVClass" URL="../Framework/Parallell Test Runner/Parallell Test Runner.lvclass"/>
@@ -1335,7 +1334,7 @@
 				<Property Name="Source[96].itemID" Type="Ref">/My Computer/Core/Advanced Assertions.lvlib/Fail If Matching String.vi</Property>
 				<Property Name="Source[96].type" Type="Str">VI</Property>
 				<Property Name="Source[97].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[97].itemID" Type="Ref">/My Computer/Framework/Report Interface.lvclass</Property>
+				<Property Name="Source[97].itemID" Type="Ref">/My Computer/Framework/Report Plugin.lvclass</Property>
 				<Property Name="Source[97].type" Type="Str">Library</Property>
 				<Property Name="Source[98].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[98].Container.depDestIndex" Type="Int">0</Property>
