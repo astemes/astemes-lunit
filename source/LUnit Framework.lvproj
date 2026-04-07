@@ -477,12 +477,12 @@
 			<Item Name="Report Plugin.lvclass" Type="LVClass" URL="../Framework/Report Plugin/Report Plugin.lvclass"/>
 			<Item Name="Result Observer.lvclass" Type="LVClass" URL="../Framework/Result Observer/Result Observer.lvclass"/>
 			<Item Name="Test Runner.lvclass" Type="LVClass" URL="../Framework/Test Runner/Test Runner.lvclass"/>
+			<Item Name="Configuration Manager.lvclass" Type="LVClass" URL="../Framework/Configuration Manager/Configuration Manager.lvclass"/>
 			<Item Name="Test Finder.lvclass" Type="LVClass" URL="../Framework/Test Finder/Test Finder.lvclass"/>
 			<Item Name="Single Thread Test Runner.lvclass" Type="LVClass" URL="../Framework/Single Thread Test Runner/Single Thread Test Runner.lvclass"/>
 			<Item Name="Parallell Test Runner.lvclass" Type="LVClass" URL="../Framework/Parallell Test Runner/Parallell Test Runner.lvclass"/>
 			<Item Name="Paths.lvlib" Type="Library" URL="../Framework/Paths/Paths.lvlib"/>
 			<Item Name="Utilities.lvlib" Type="Library" URL="../Framework/Utilities/Utilities.lvlib"/>
-			<Item Name="Configuration Manager.lvclass" Type="LVClass" URL="../Framework/Configuration Manager/Configuration Manager.lvclass"/>
 		</Item>
 		<Item Name="Examples" Type="Folder">
 			<Item Name="API Demo" Type="Folder">
