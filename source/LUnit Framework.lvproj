@@ -735,13 +735,6 @@
 				<Item Name="cfis_Split File Path Into Three Parts.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Split File Path Into Three Parts.vi"/>
 				<Item Name="cfis_Get File Extension Without Changing Case.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Get File Extension Without Changing Case.vi"/>
 				<Item Name="cfis_Reverse Scan From String For Integer.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Reverse Scan From String For Integer.vi"/>
-				<Item Name="Pass If Equal.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Pass If Equal.vim"/>
-				<Item Name="Test Case.ctl" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Test Case.lvclass/Test Case.ctl"/>
-				<Item Name="Fail If Equal.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If Equal.vim"/>
-				<Item Name="Pass If.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Pass If.vi"/>
-				<Item Name="Fail If.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If.vi"/>
-				<Item Name="Fail If In Collection.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/Advanced Assertions/Fail If In Collection.vim"/>
-				<Item Name="Pass If In Collection.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/Advanced Assertions/Pass If In Collection.vim"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
