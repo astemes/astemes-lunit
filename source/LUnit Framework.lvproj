@@ -481,7 +481,7 @@
 			<Item Name="Configuration Manager.lvclass" Type="LVClass" URL="../Framework/Configuration Manager/Configuration Manager.lvclass"/>
 			<Item Name="Test Finder.lvclass" Type="LVClass" URL="../Framework/Test Finder/Test Finder.lvclass"/>
 			<Item Name="Single Thread Test Runner.lvclass" Type="LVClass" URL="../Framework/Single Thread Test Runner/Single Thread Test Runner.lvclass"/>
-			<Item Name="Parallell Test Runner.lvclass" Type="LVClass" URL="../Framework/Parallell Test Runner/Parallell Test Runner.lvclass"/>
+			<Item Name="Parallel Test Runner.lvclass" Type="LVClass" URL="../Framework/Parallel Test Runner/Parallel Test Runner.lvclass"/>
 			<Item Name="Paths.lvlib" Type="Library" URL="../Framework/Paths/Paths.lvlib"/>
 			<Item Name="Utilities.lvlib" Type="Library" URL="../Framework/Utilities/Utilities.lvlib"/>
 		</Item>
@@ -878,7 +878,7 @@
 				<Property Name="Source[107].itemID" Type="Ref">/My Computer/Core/Result.lvlib/Type.ctl</Property>
 				<Property Name="Source[107].type" Type="Str">VI</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Framework/Parallell Test Runner.lvclass</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Framework/Parallel Test Runner.lvclass</Property>
 				<Property Name="Source[11].type" Type="Str">Library</Property>
 				<Property Name="Source[12].destinationIndex" Type="Int">7</Property>
 				<Property Name="Source[12].itemID" Type="Ref">/My Computer/User Interface/Execution UI.lvclass</Property>
@@ -1186,7 +1186,7 @@
 				<Property Name="Source[58].itemID" Type="Ref">/My Computer/Framework/Single Thread Test Runner.lvclass/Create.vi</Property>
 				<Property Name="Source[58].type" Type="Str">VI</Property>
 				<Property Name="Source[59].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[59].itemID" Type="Ref">/My Computer/Framework/Parallell Test Runner.lvclass/Create.vi</Property>
+				<Property Name="Source[59].itemID" Type="Ref">/My Computer/Framework/Parallel Test Runner.lvclass/Create.vi</Property>
 				<Property Name="Source[59].type" Type="Str">VI</Property>
 				<Property Name="Source[6].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[6].Container.depDestIndex" Type="Int">0</Property>
