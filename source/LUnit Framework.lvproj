@@ -520,7 +520,6 @@
 			<Item Name="Report Plugins" Type="Folder">
 				<Item Name="XML Report.lvclass" Type="LVClass" URL="../Plugins/XML Report/XML Report.lvclass"/>
 				<Item Name="Text Report.lvclass" Type="LVClass" URL="../Plugins/Text Report/Text Report.lvclass"/>
-				<Item Name="Coverage Report.lvclass" Type="LVClass" URL="../Plugins/Coverage Report/Coverage Report.lvclass"/>
 			</Item>
 			<Item Name="Icon Decorator.lvclass" Type="LVClass" URL="../Plugins/Icon Decorator/Icon Decorator.lvclass"/>
 			<Item Name="Test Result View.lvclass" Type="LVClass" URL="../Plugins/Test Result View/Test Result View.lvclass"/>
