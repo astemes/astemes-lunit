@@ -57,6 +57,7 @@
 			<Item Name="API Pass Output.lvclass" Type="LVClass" URL="../../tests/API Pass Output/API Pass Output.lvclass"/>
 			<Item Name="XML Report Test.lvclass" Type="LVClass" URL="../../tests/XML Report Test/XML Report Test.lvclass"/>
 			<Item Name="Describe Variant Test.lvclass" Type="LVClass" URL="../../tests/Describe Variant Test/Describe Variant Test.lvclass"/>
+			<Item Name="Report Plugin Test.lvclass" Type="LVClass" URL="../../tests/Report Plugin Test/Report Plugin Test.lvclass"/>
 		</Item>
 		<Item Name="Excluded Dependencies" Type="Folder">
 			<Item Name="Project Provider" Type="Folder">
