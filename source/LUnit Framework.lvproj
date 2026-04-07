@@ -480,6 +480,7 @@
 			<Item Name="Test Finder.lvclass" Type="LVClass" URL="../Framework/Test Finder/Test Finder.lvclass"/>
 			<Item Name="Single Thread Test Runner.lvclass" Type="LVClass" URL="../Framework/Single Thread Test Runner/Single Thread Test Runner.lvclass"/>
 			<Item Name="Parallell Test Runner.lvclass" Type="LVClass" URL="../Framework/Parallell Test Runner/Parallell Test Runner.lvclass"/>
+			<Item Name="Paths.lvlib" Type="Library" URL="../Framework/Paths/Paths.lvlib"/>
 			<Item Name="Utilities.lvlib" Type="Library" URL="../Framework/Utilities/Utilities.lvlib"/>
 			<Item Name="Configuration Manager.lvclass" Type="LVClass" URL="../Framework/Configuration Manager/Configuration Manager.lvclass"/>
 		</Item>
@@ -509,7 +510,6 @@
 		<Item Name="User Interface" Type="Folder">
 			<Item Name="Support" Type="Folder">
 				<Item Name="UI Configuration Manager.lvclass" Type="LVClass" URL="../User Interface/Configuration Manager/UI Configuration Manager.lvclass"/>
-				<Item Name="Paths.lvlib" Type="Library" URL="../User Interface/Support/Paths.lvlib"/>
 			</Item>
 			<Item Name="Plugin Loader.lvclass" Type="LVClass" URL="../User Interface/Plugin Loader/Plugin Loader.lvclass"/>
 			<Item Name="Execution UI.lvclass" Type="LVClass" URL="../User Interface/Execution UI/Execution UI.lvclass"/>
@@ -568,7 +568,7 @@
 			<Item Name="Find Highlights.vi" Type="VI" URL="../../astemes-string-diff-utils/source/Find Highlights.vi"/>
 		</Item>
 		<Item Name="LICENSE" Type="Document" URL="../../LICENSE"/>
-		<Item Name="Post-Install Custom Action.vi" Type="VI" URL="../User Interface/Support/Post-Install Custom Action.vi"/>
+		<Item Name="Post-Install Custom Action.vi" Type="VI" URL="../Post-Install Custom Action.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
