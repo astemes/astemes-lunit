@@ -515,7 +515,6 @@
 			<Item Name="Plugin Loader.lvclass" Type="LVClass" URL="../User Interface/Plugin Loader/Plugin Loader.lvclass"/>
 			<Item Name="Execution UI.lvclass" Type="LVClass" URL="../User Interface/Execution UI/Execution UI.lvclass"/>
 			<Item Name="Result Model.lvclass" Type="LVClass" URL="../User Interface/Result Model/Result Model.lvclass"/>
-			<Item Name="Result Model by Reference.lvclass" Type="LVClass" URL="../User Interface/Result Model by Reference/Result Model by Reference.lvclass"/>
 		</Item>
 		<Item Name="Plugins" Type="Folder">
 			<Item Name="Report Plugins" Type="Folder">
@@ -884,7 +883,7 @@
 				<Property Name="Source[12].itemID" Type="Ref">/My Computer/User Interface/Execution UI.lvclass</Property>
 				<Property Name="Source[12].type" Type="Str">Library</Property>
 				<Property Name="Source[13].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/My Computer/User Interface/Result Model by Reference.lvclass</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass</Property>
 				<Property Name="Source[13].type" Type="Str">Library</Property>
 				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[14].itemID" Type="Ref">/My Computer/LICENSE</Property>
@@ -1177,7 +1176,7 @@
 				<Property Name="Source[55].itemID" Type="Ref">/My Computer/User Interface/Plugin Loader.lvclass</Property>
 				<Property Name="Source[55].type" Type="Str">Library</Property>
 				<Property Name="Source[56].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[56].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass</Property>
+				<Property Name="Source[56].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Result Model_depr.lvclass</Property>
 				<Property Name="Source[56].type" Type="Str">Library</Property>
 				<Property Name="Source[57].destinationIndex" Type="Int">9</Property>
 				<Property Name="Source[57].itemID" Type="Ref">/My Computer/Framework/Test Finder.lvclass/Find Tests.vi</Property>
@@ -1195,34 +1194,34 @@
 				<Property Name="Source[6].sourceInclusion" Type="Str">Exclude</Property>
 				<Property Name="Source[6].type" Type="Str">Container</Property>
 				<Property Name="Source[60].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[60].itemID" Type="Ref">/My Computer/User Interface/Result Model by Reference.lvclass/Create.vi</Property>
+				<Property Name="Source[60].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Create.vi</Property>
 				<Property Name="Source[60].type" Type="Str">VI</Property>
 				<Property Name="Source[61].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[61].itemID" Type="Ref">/My Computer/User Interface/Result Model by Reference.lvclass/Get Model Data.vi</Property>
+				<Property Name="Source[61].itemID" Type="Ref"></Property>
 				<Property Name="Source[61].type" Type="Str">VI</Property>
 				<Property Name="Source[62].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[62].itemID" Type="Ref">/My Computer/User Interface/Result Model by Reference.lvclass/Destroy.vi</Property>
+				<Property Name="Source[62].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Destroy.vi</Property>
 				<Property Name="Source[62].type" Type="Str">VI</Property>
 				<Property Name="Source[63].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[63].itemID" Type="Ref">/My Computer/User Interface/Result Model by Reference.lvclass/Start Test.vi</Property>
+				<Property Name="Source[63].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Start Test.vi</Property>
 				<Property Name="Source[63].type" Type="Str">VI</Property>
 				<Property Name="Source[64].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[64].itemID" Type="Ref">/My Computer/User Interface/Result Model by Reference.lvclass/Result.vi</Property>
+				<Property Name="Source[64].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Result.vi</Property>
 				<Property Name="Source[64].type" Type="Str">VI</Property>
 				<Property Name="Source[65].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[65].itemID" Type="Ref">/My Computer/User Interface/Result Model by Reference.lvclass/Get Statistics.vi</Property>
+				<Property Name="Source[65].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Get Statistics.vi</Property>
 				<Property Name="Source[65].type" Type="Str">VI</Property>
 				<Property Name="Source[66].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[66].itemID" Type="Ref">/My Computer/User Interface/Result Model by Reference.lvclass/Add Tests.vi</Property>
+				<Property Name="Source[66].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Add Tests.vi</Property>
 				<Property Name="Source[66].type" Type="Str">VI</Property>
 				<Property Name="Source[67].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[67].itemID" Type="Ref">/My Computer/User Interface/Result Model by Reference.lvclass/Get Summary.vi</Property>
+				<Property Name="Source[67].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Get Summary.vi</Property>
 				<Property Name="Source[67].type" Type="Str">VI</Property>
 				<Property Name="Source[68].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[68].itemID" Type="Ref">/My Computer/User Interface/Result Model by Reference.lvclass/Get Tree Items.vi</Property>
+				<Property Name="Source[68].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Get Tree Items.vi</Property>
 				<Property Name="Source[68].type" Type="Str">VI</Property>
 				<Property Name="Source[69].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[69].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Start Test.vi</Property>
+				<Property Name="Source[69].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Result Model_depr.lvclass/Start Test.vi</Property>
 				<Property Name="Source[69].type" Type="Str">VI</Property>
 				<Property Name="Source[7].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[7].Container.depDestIndex" Type="Int">0</Property>
@@ -1231,19 +1230,19 @@
 				<Property Name="Source[7].sourceInclusion" Type="Str">Exclude</Property>
 				<Property Name="Source[7].type" Type="Str">Container</Property>
 				<Property Name="Source[70].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[70].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Result.vi</Property>
+				<Property Name="Source[70].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Result Model_depr.lvclass/Result.vi</Property>
 				<Property Name="Source[70].type" Type="Str">VI</Property>
 				<Property Name="Source[71].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[71].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Get Statistics.vi</Property>
+				<Property Name="Source[71].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Result Model_depr.lvclass/Get Statistics.vi</Property>
 				<Property Name="Source[71].type" Type="Str">VI</Property>
 				<Property Name="Source[72].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[72].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Add Tests.vi</Property>
+				<Property Name="Source[72].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Result Model_depr.lvclass/Add Tests.vi</Property>
 				<Property Name="Source[72].type" Type="Str">VI</Property>
 				<Property Name="Source[73].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[73].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Get Summary.vi</Property>
+				<Property Name="Source[73].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Result Model_depr.lvclass/Get Summary.vi</Property>
 				<Property Name="Source[73].type" Type="Str">VI</Property>
 				<Property Name="Source[74].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[74].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Get Tree Items.vi</Property>
+				<Property Name="Source[74].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Result Model_depr.lvclass/Get Tree Items.vi</Property>
 				<Property Name="Source[74].type" Type="Str">VI</Property>
 				<Property Name="Source[75].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[75].Container.depDestIndex" Type="Int">0</Property>
@@ -1264,7 +1263,7 @@
 				<Property Name="Source[79].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[79].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[79].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[79].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Private</Property>
+				<Property Name="Source[79].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Result Model_depr.lvclass/Private</Property>
 				<Property Name="Source[79].type" Type="Str">Container</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Plugins/Icon Decorator.lvclass</Property>
@@ -1272,7 +1271,7 @@
 				<Property Name="Source[80].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[80].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[80].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[80].itemID" Type="Ref">/My Computer/User Interface/Result Model.lvclass/Types</Property>
+				<Property Name="Source[80].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Result Model_depr.lvclass/Types</Property>
 				<Property Name="Source[80].type" Type="Str">Container</Property>
 				<Property Name="Source[81].destinationIndex" Type="Int">9</Property>
 				<Property Name="Source[81].itemID" Type="Ref">/My Computer/Core/LUnit Test Suite.lvclass/Run.vi</Property>
