@@ -734,6 +734,10 @@
 				<Item Name="cfis_Get File Extension Without Changing Case.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Get File Extension Without Changing Case.vi"/>
 				<Item Name="cfis_Reverse Scan From String For Integer.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Reverse Scan From String For Integer.vi"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
+				<Item Name="Pass If Equal.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Pass If Equal.vim"/>
+				<Item Name="Fail If Equal.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If Equal.vim"/>
+				<Item Name="Fail If.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If.vi"/>
+				<Item Name="Pass If.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Pass If.vi"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
