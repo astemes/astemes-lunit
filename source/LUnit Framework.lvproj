@@ -468,8 +468,6 @@
 		<Item Name="Core" Type="Folder">
 			<Item Name="Result.lvlib" Type="Library" URL="../Core/Result/Result.lvlib"/>
 			<Item Name="Runnable.lvclass" Type="LVClass" URL="../Runnable.lvclass"/>
-			<Item Name="Advanced Assertions.lvlib" Type="Library" URL="../Core/Advanced Assertions/Advanced Assertions.lvlib"/>
-			<Item Name="Execution API.lvclass" Type="LVClass" URL="../User Interface/Execution API/Execution API.lvclass"/>
 			<Item Name="LUnit Test Case.lvclass" Type="LVClass" URL="../LUnit Test Case.lvclass"/>
 			<Item Name="LUnit Test Suite.lvclass" Type="LVClass" URL="../LUnit Test Suite.lvclass"/>
 		</Item>
@@ -478,12 +476,15 @@
 			<Item Name="Report Plugin.lvclass" Type="LVClass" URL="../Framework/Report Plugin/Report Plugin.lvclass"/>
 			<Item Name="Result Observer.lvclass" Type="LVClass" URL="../Framework/Result Observer/Result Observer.lvclass"/>
 			<Item Name="Test Runner.lvclass" Type="LVClass" URL="../Framework/Test Runner/Test Runner.lvclass"/>
+			<Item Name="Execution API.lvclass" Type="LVClass" URL="../Framework/Execution API/Execution API.lvclass"/>
 			<Item Name="Configuration Manager.lvclass" Type="LVClass" URL="../Framework/Configuration Manager/Configuration Manager.lvclass"/>
 			<Item Name="Test Finder.lvclass" Type="LVClass" URL="../Framework/Test Finder/Test Finder.lvclass"/>
 			<Item Name="Single Thread Test Runner.lvclass" Type="LVClass" URL="../Framework/Single Thread Test Runner/Single Thread Test Runner.lvclass"/>
 			<Item Name="Parallel Test Runner.lvclass" Type="LVClass" URL="../Framework/Parallel Test Runner/Parallel Test Runner.lvclass"/>
+			<Item Name="Advanced Assertions.lvlib" Type="Library" URL="../Framework/Advanced Assertions/Advanced Assertions.lvlib"/>
 			<Item Name="Paths.lvlib" Type="Library" URL="../Framework/Paths/Paths.lvlib"/>
 			<Item Name="Utilities.lvlib" Type="Library" URL="../Framework/Utilities/Utilities.lvlib"/>
+			<Item Name="Plugin Loader.lvlib" Type="Library" URL="../Framework/Plugin Loader/Plugin Loader.lvlib"/>
 		</Item>
 		<Item Name="Examples" Type="Folder">
 			<Item Name="API Demo" Type="Folder">
@@ -512,7 +513,6 @@
 			<Item Name="Support" Type="Folder">
 				<Item Name="UI Configuration Manager.lvclass" Type="LVClass" URL="../User Interface/Configuration Manager/UI Configuration Manager.lvclass"/>
 			</Item>
-			<Item Name="Plugin Loader.lvclass" Type="LVClass" URL="../User Interface/Plugin Loader/Plugin Loader.lvclass"/>
 			<Item Name="Execution UI.lvclass" Type="LVClass" URL="../User Interface/Execution UI/Execution UI.lvclass"/>
 			<Item Name="Result Model.lvclass" Type="LVClass" URL="../User Interface/Result Model/Result Model.lvclass"/>
 		</Item>
@@ -734,10 +734,6 @@
 				<Item Name="cfis_Get File Extension Without Changing Case.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Get File Extension Without Changing Case.vi"/>
 				<Item Name="cfis_Reverse Scan From String For Integer.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Reverse Scan From String For Integer.vi"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
-				<Item Name="Pass If Equal.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Pass If Equal.vim"/>
-				<Item Name="Fail If Equal.vim" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If Equal.vim"/>
-				<Item Name="Fail If.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Fail If.vi"/>
-				<Item Name="Pass If.vi" Type="VI" URL="/&lt;vilib&gt;/Astemes/LUnit/Core/LUnit Test Case/Assertions/Pass If.vi"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -1058,7 +1054,7 @@
 				<Property Name="Source[36].Container.applyPrefix" Type="Bool">true</Property>
 				<Property Name="Source[36].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[36].destinationIndex" Type="Int">11</Property>
-				<Property Name="Source[36].itemID" Type="Ref">/My Computer/Core/Execution API.lvclass/API</Property>
+				<Property Name="Source[36].itemID" Type="Ref">/My Computer/Framework/Execution API.lvclass/API</Property>
 				<Property Name="Source[36].newName" Type="Str">LUnit </Property>
 				<Property Name="Source[36].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[36].type" Type="Str">Container</Property>
@@ -1109,7 +1105,7 @@
 				<Property Name="Source[45].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[45].type" Type="Str">Container</Property>
 				<Property Name="Source[46].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[46].itemID" Type="Ref">/My Computer/Core/Execution API.lvclass</Property>
+				<Property Name="Source[46].itemID" Type="Ref">/My Computer/Framework/Execution API.lvclass</Property>
 				<Property Name="Source[46].newName" Type="Str">LUnit Execution API.lvclass</Property>
 				<Property Name="Source[46].properties[0].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[46].properties[0].value" Type="Bool">false</Property>
@@ -1153,7 +1149,7 @@
 				<Property Name="Source[50].itemID" Type="Ref">/My Computer/Project Providers</Property>
 				<Property Name="Source[50].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[50].type" Type="Str">Container</Property>
-				<Property Name="Source[51].itemID" Type="Ref">/My Computer/Core/Execution API.lvclass/Result.vi</Property>
+				<Property Name="Source[51].itemID" Type="Ref">/My Computer/Framework/Execution API.lvclass/Result.vi</Property>
 				<Property Name="Source[51].newName" Type="Str">LUnit Result.vi</Property>
 				<Property Name="Source[51].properties[0].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[51].properties[0].value" Type="Bool">false</Property>
@@ -1177,7 +1173,7 @@
 				<Property Name="Source[54].itemID" Type="Ref">/My Computer/Framework/Plugin.lvclass</Property>
 				<Property Name="Source[54].type" Type="Str">Library</Property>
 				<Property Name="Source[55].destinationIndex" Type="Int">7</Property>
-				<Property Name="Source[55].itemID" Type="Ref">/My Computer/User Interface/Plugin Loader.lvclass</Property>
+				<Property Name="Source[55].itemID" Type="Ref"></Property>
 				<Property Name="Source[55].type" Type="Str">Library</Property>
 				<Property Name="Source[56].destinationIndex" Type="Int">9</Property>
 				<Property Name="Source[56].itemID" Type="Ref">/My Computer/Dependencies/Items in Memory/Result Model_depr.lvclass</Property>
@@ -1259,7 +1255,7 @@
 				<Property Name="Source[76].itemID" Type="Ref"></Property>
 				<Property Name="Source[76].type" Type="Str">Container</Property>
 				<Property Name="Source[77].destinationIndex" Type="Int">7</Property>
-				<Property Name="Source[77].itemID" Type="Ref">/My Computer/User Interface/Plugin Loader.lvclass/Load Plugin.vi</Property>
+				<Property Name="Source[77].itemID" Type="Ref">/My Computer/Framework/Plugin Loader.lvlib/Load Plugin.vi</Property>
 				<Property Name="Source[77].type" Type="Str">VI</Property>
 				<Property Name="Source[78].destinationIndex" Type="Int">7</Property>
 				<Property Name="Source[78].itemID" Type="Ref">/My Computer/User Interface/Execution UI.lvclass/Private/Handle Errors.vi</Property>
@@ -1308,7 +1304,7 @@
 				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Framework/Test Finder.lvclass</Property>
 				<Property Name="Source[9].type" Type="Str">Library</Property>
 				<Property Name="Source[90].destinationIndex" Type="Int">13</Property>
-				<Property Name="Source[90].itemID" Type="Ref">/My Computer/Core/Advanced Assertions.lvlib</Property>
+				<Property Name="Source[90].itemID" Type="Ref">/My Computer/Framework/Advanced Assertions.lvlib</Property>
 				<Property Name="Source[90].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[90].newName" Type="Str">LUnit Advanced Assertions.lvlib</Property>
 				<Property Name="Source[90].properties[0].type" Type="Str">Auto error handling</Property>
@@ -1319,22 +1315,22 @@
 				<Property Name="Source[90].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[90].type" Type="Str">Library</Property>
 				<Property Name="Source[91].destinationIndex" Type="Int">13</Property>
-				<Property Name="Source[91].itemID" Type="Ref">/My Computer/Core/Advanced Assertions.lvlib/Fail If Specific Error.vi</Property>
+				<Property Name="Source[91].itemID" Type="Ref">/My Computer/Framework/Advanced Assertions.lvlib/Fail If Specific Error.vi</Property>
 				<Property Name="Source[91].type" Type="Str">VI</Property>
 				<Property Name="Source[92].destinationIndex" Type="Int">13</Property>
-				<Property Name="Source[92].itemID" Type="Ref">/My Computer/Core/Advanced Assertions.lvlib/Pass If Specific Error.vi</Property>
+				<Property Name="Source[92].itemID" Type="Ref">/My Computer/Framework/Advanced Assertions.lvlib/Pass If Specific Error.vi</Property>
 				<Property Name="Source[92].type" Type="Str">VI</Property>
 				<Property Name="Source[93].destinationIndex" Type="Int">13</Property>
-				<Property Name="Source[93].itemID" Type="Ref">/My Computer/Core/Advanced Assertions.lvlib/Pass If In Collection.vim</Property>
+				<Property Name="Source[93].itemID" Type="Ref">/My Computer/Framework/Advanced Assertions.lvlib/Pass If In Collection.vim</Property>
 				<Property Name="Source[93].type" Type="Str">VI</Property>
 				<Property Name="Source[94].destinationIndex" Type="Int">13</Property>
-				<Property Name="Source[94].itemID" Type="Ref">/My Computer/Core/Advanced Assertions.lvlib/Fail If In Collection.vim</Property>
+				<Property Name="Source[94].itemID" Type="Ref">/My Computer/Framework/Advanced Assertions.lvlib/Fail If In Collection.vim</Property>
 				<Property Name="Source[94].type" Type="Str">VI</Property>
 				<Property Name="Source[95].destinationIndex" Type="Int">13</Property>
-				<Property Name="Source[95].itemID" Type="Ref">/My Computer/Core/Advanced Assertions.lvlib/Pass If Matching String.vi</Property>
+				<Property Name="Source[95].itemID" Type="Ref">/My Computer/Framework/Advanced Assertions.lvlib/Pass If Matching String.vi</Property>
 				<Property Name="Source[95].type" Type="Str">VI</Property>
 				<Property Name="Source[96].destinationIndex" Type="Int">13</Property>
-				<Property Name="Source[96].itemID" Type="Ref">/My Computer/Core/Advanced Assertions.lvlib/Fail If Matching String.vi</Property>
+				<Property Name="Source[96].itemID" Type="Ref">/My Computer/Framework/Advanced Assertions.lvlib/Fail If Matching String.vi</Property>
 				<Property Name="Source[96].type" Type="Str">VI</Property>
 				<Property Name="Source[97].destinationIndex" Type="Int">9</Property>
 				<Property Name="Source[97].itemID" Type="Ref">/My Computer/Framework/Report Plugin.lvclass</Property>
