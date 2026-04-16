@@ -523,7 +523,6 @@
 			</Item>
 			<Item Name="Icon Decorator.lvclass" Type="LVClass" URL="../Plugins/Icon Decorator/Icon Decorator.lvclass"/>
 			<Item Name="Test Result View.lvclass" Type="LVClass" URL="../Plugins/Test Result View/Test Result View.lvclass"/>
-			<Item Name="Coverage Analyzer.lvclass" Type="LVClass" URL="../Plugins/Coverage Analyzer/Coverage Analyzer.lvclass"/>
 			<Item Name="Execution Profiler.lvclass" Type="LVClass" URL="../Plugins/Execution Profiler/Execution Profiler.lvclass"/>
 		</Item>
 		<Item Name="Menu" Type="Folder">
@@ -711,7 +710,6 @@
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="LVNodeAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVNodeAndColumnTypeDef.ctl"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="Set Union.vim" Type="VI" URL="/&lt;vilib&gt;/set operations/Set Union.vim"/>
 				<Item Name="QuickDrop Parse Plugin Variant.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/QuickDropSupport/QuickDrop Parse Plugin Variant.vi"/>
 				<Item Name="QuickDrop Plugin Data ver1.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/QuickDropSupport/QuickDrop Plugin Data ver1.ctl"/>
 				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
