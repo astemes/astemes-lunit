@@ -510,11 +510,9 @@
 			</Item>
 		</Item>
 		<Item Name="User Interface" Type="Folder">
-			<Item Name="Support" Type="Folder">
-				<Item Name="UI Configuration Manager.lvclass" Type="LVClass" URL="../User Interface/Configuration Manager/UI Configuration Manager.lvclass"/>
-			</Item>
 			<Item Name="Execution UI.lvclass" Type="LVClass" URL="../User Interface/Execution UI/Execution UI.lvclass"/>
 			<Item Name="Result Model.lvclass" Type="LVClass" URL="../User Interface/Result Model/Result Model.lvclass"/>
+			<Item Name="UI Configuration Manager.lvclass" Type="LVClass" URL="../User Interface/Configuration Manager/UI Configuration Manager.lvclass"/>
 		</Item>
 		<Item Name="Plugins" Type="Folder">
 			<Item Name="Report Plugins" Type="Folder">
@@ -1068,7 +1066,7 @@
 				<Property Name="Source[44].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[44].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[44].destinationIndex" Type="Int">9</Property>
-				<Property Name="Source[44].itemID" Type="Ref">/My Computer/User Interface/Support</Property>
+				<Property Name="Source[44].itemID" Type="Ref"></Property>
 				<Property Name="Source[44].newName" Type="Str">LUnit </Property>
 				<Property Name="Source[44].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[44].properties[0].value" Type="Bool">false</Property>
