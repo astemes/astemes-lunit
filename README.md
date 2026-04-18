@@ -11,7 +11,7 @@ Full documentation: **[lunit.astemes.com](https://lunit.astemes.com/)**
 
 ## Features
 
-- **Best-in-class test execution speed** — typically 2–10× faster than other LabVIEW testing tools (see [Benchmark](#benchmark))
+- Best-in-class test execution speed (see [Benchmark](#benchmark))
 - Clear and informative results view
 - Run specific tests quickly from the right-click menu
 - Test results visible directly in the LabVIEW project
@@ -24,7 +24,7 @@ Full documentation: **[lunit.astemes.com](https://lunit.astemes.com/)**
 
 ## Prerequisites
 
-- **LabVIEW 2020 (32-bit)**, **LabVIEW 2020 SP1 (64-bit)**, or any later version. 
+- LabVIEW 2020 (32-bit), LabVIEW 2020 SP1 (64-bit), or any later version. 
 
 ## Installation
 
