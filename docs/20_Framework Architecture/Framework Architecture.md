@@ -7,20 +7,20 @@ The core was rewritten as of version 1.2 and the discussion below is accurate on
 ## General Architecture
 
 The framework defines a Runnable interface, which, as the name implies, defines a class as runnable.
-The base Test Case class implements the runnable interface and an execution of a test is done by instantiating an object of a Test Case class and running it.
+The base Test Case class implements the Runnable interface and an execution of a test is done by instantiating an object of a Test Case class and running it.
 To run more than one test, multiple instances of the Test Case class are instantiated.
 
 Multiple tests may be aggregated into a Test Suite object, which also implements the Runnable interface, and may be executed by calling the Run VI on the Test Suite.
 While a Test Case will always be done after one call to the Run VI, a Test Suite may require multiple calls before being done.
 Test Suites may form composites (suites of suites), but this is not visible through the Runnable interface.
 
-Test Suites are typically generated through test discovery using factory VIs located in the Test Suite class. 
+Test Suites are typically generated through test discovery using factory VIs located in the Test Suite class.
 These VIs can generate test suites containing all tests in a specific class, library or project.
 
 ## Test Case
 
-A Test Case is the base class containing all test methods which are included in the test case.
-The Test Case class defines two dynamic dispatch test methods called Setup.vi and Teardown.vi.
+A Test Case is the base class that users extend to define their test methods.
+The Test Case class defines two dynamic dispatch lifecycle methods called Setup.vi and Teardown.vi.
 These methods are executed before and after each test method in the test case.
 
 ## Test Methods
@@ -35,11 +35,11 @@ The connector pane of the test case must use the 4-2-2-4 pattern and have the st
 ## Assertions
 
 Tests are evaluated by one or more assertions called in the test method.
-The assertions are available from the LUnit palette and the quick drop menu.
-Assertions are evaluated when the test case executes and the result of the assertions are reported by the framework.
+The assertions are available from the LUnit palette and the Quick Drop menu.
+Assertions are evaluated when the test case executes and the results of the assertions are reported by the framework.
 Multiple assertions may be used in a single test method and results from all assertions will be available in the test report.
 A test case will fail if one or more of the assertions fail.
-Likewise a test case will produce an error result if one or more of the assertions receives an error on the `Error In` terminal.
+Likewise, a test case will produce an error result if one or more of the assertions receives an error on the `Error In` terminal.
 
 ![LUnit Palette](img/LUnit_palette.PNG)
 
@@ -53,7 +53,7 @@ When the Parallel Test Runner is enabled, tests are grouped into one suite for e
 ## Test Finder
 
 When launching the LUnit UI, the test finder searches for classes inheriting from the base Test Case class within the current application instance.
-The result is saved into an index file and retrieved on subsequent runs to only search through classes which have changed since last time.
+The result is saved into an index file and retrieved on subsequent runs to only search through classes that have changed since last time.
 To force the test finder to recreate the index, use the refresh test index button in the LUnit UI.
 
 ## LabVIEW API
@@ -69,21 +69,20 @@ The reason for this change is that the low level API, provided earlier, had some
 The low level API is still used by the high level API method and the low level VIs may be used to alter the behavior of the test execution.
 Because of the low level nature, this API is more volatile and may break in later releases, while the high level method is very likely to remain stable.
 
-## Low Level API
+### Low Level API
 
-Before going on, see the warning in the previous section.
-Now continue at your own risk.
+Note the stability warning in the previous section before using this API.
 
 The low level API may be used to run tests in various ways.
-Tests are executed using the provided methods and results are returned using User Events, which may be registered for using the provided API method.
+Tests are executed using the provided methods and results are returned using User Events, which can be subscribed to via the provided API method.
 To use the API methods, an API reference must first be obtained using the `LUnit Open API Reference.vi`.
 The configuration VIs `LUnit Configure Reporting.vi` and `LUnit Configure Test Runner.vi` should be used before executing a test.
 
-A test case is executed by calling one of the Run Test API VI:s.
+A test case is executed by calling one of the Run Test API VIs.
 To observe the results of the test execution, the `LUnit Register for Events.vi` must be called before starting test execution.
 Results are returned using a data object through the user event registration.
 
-When the execution has completed a result with type `Test Run` is generated.
+When execution has completed, a result with type `Test Run` is generated.
 To abort a running test, use the `LUnit Abort.vi`.
 When done, use the `LUnit Close API Reference.vi` and unregister for any event obtained from `LUnit Register for Events.vi`.
 
