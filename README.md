@@ -1,103 +1,104 @@
 # LUnit
-[![Image](https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=installs)](https://www.vipm.io/package/astemes_lib_lunit/) 
-[![Image](https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=stars)](https://www.vipm.io/package/astemes_lib_lunit/)
+
+[![VIPM installs](https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=installs)](https://www.vipm.io/package/astemes_lib_lunit/)
+[![VIPM stars](https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=stars)](https://www.vipm.io/package/astemes_lib_lunit/)
 [![Unit Tests](https://github.com/astemes/astemes-lunit/actions/workflows/ci.yml/badge.svg)](https://github.com/astemes/astemes-lunit/actions/workflows/ci.yml)
 [![Build and Release](https://github.com/astemes/astemes-lunit/actions/workflows/release.yml/badge.svg)](https://github.com/astemes/astemes-lunit/actions/workflows/release.yml)
 
-A LabVIEW Unit Testing Framework built on the [xUnit](https://en.wikipedia.org/wiki/XUnit) unit testing industry standard and inspired by [JKI VI Tester](https://github.com/JKISoftware/JKI-VI-Tester).
-LUnit helps you test drive your LabVIEW development and provides the following key features.
+A unit testing framework for LabVIEW, built on the [xUnit](https://en.wikipedia.org/wiki/XUnit) industry standard and inspired by [JKI VI Tester](https://github.com/JKISoftware/JKI-VI-Tester). LUnit helps you test-drive your LabVIEW development with a fast, tightly integrated workflow.
 
-- Fast test execution\*
+Full documentation: **[lunit.astemes.com](https://lunit.astemes.com/)**
+
+## Features
+
+- **Best-in-class test execution speed** — typically 2–10× faster than other LabVIEW testing tools (see [Benchmark](#benchmark))
 - Clear and informative results view
-- Run specific tests quickly from right-click menu
-- Test results visible directly in LabVIEW project
-- Instant loading of UI
-- Parallel test execution managed by framework
+- Run specific tests quickly from the right-click menu
+- Test results visible directly in the LabVIEW project
+- Instant loading of the UI
+- Parallel test execution managed by the framework
 - Profiling tools for test execution time and code coverage
-- Native CLI and support for CI
-- LabVIEW API
-
-Full documentation available on [https://lunit.astemes.com](https://lunit.astemes.com/).
-
-\*Test execution speed is really best-in-class. 
-Below is a comparison between LUnit and two other popular unit testing toolkits\*\*.
-The benchmark is available [here](https://github.com/Astemes/astemes-lunit/tree/main/sandbox/Benchmark) and consists of 160 tests in 20 test case classes.
-The times reported are averages over 5 runs started by the `Run All` feature of each framework.
-As the tests themselves are empty, the benchmark measures only the overhead added by the framework.
-
-<img src="https://raw.githubusercontent.com/Astemes/astemes-lunit/main/docs/10_Basics/img/Benchmark.png" alt="Benchmark"  width="400"/>
-
-\*\* The numbers are results from two test environment and you will get different results with other setups.
-The conclusion is that LUnit is somewhere in the range of 2x-10x faster than other available tools.
-If you find significantly differing results, please get in touch.
-As of version 1.6 of LUnit the performance was further improved by more than 2x when running tests in parallell, which is not shown in numbers above.
+- Native CLI and first-class CI support
+- LabVIEW API for extension and integration
+- Plugin architecture which allows extenssion through add-ons
 
 ## Prerequisites
 
-To use LUnit you will need to have LabVIEW 2020 32-bit, LabVIEW 2020 64-bit SP1, or any later version of LabVIEW installed.
-Please note that for 64-bit LabVIEW, version LabVIEW 2020 SP1 or later is required to work as expected.
-As LUnit was developed using the LabVIEW Community Edition there is currently no support for older versions of LabVIEW.
-Operation system requirements are Windows 10 (version 1909)/8.1 Update 12/7 SP13, Windows Server 2016, Windows Server 2012 R22, or Windows Server 2008 R2 SP13.
+- **LabVIEW 2020 (32-bit)**, **LabVIEW 2020 SP1 (64-bit)**, or any later version. 
 
 ## Installation
 
-LUnit is easiest installed using [VI Package Manager](https://www.vipm.io/package/astemes_lib_lunit/)(VIPM).
-New releases are published to VIPM regularly, but lags behind the latest stable version published at [https://github.com/astemes/astemes-lunit/releases/](https://github.com/astemes/astemes-lunit/releases/).
-The release contains a VIPM package which is installed using VIPM.
+The recommended way to install LUnit is via [VI Package Manager (VIPM)](https://www.vipm.io/package/astemes_lib_lunit/). This installs the latest stable release.
 
-## Using LUnit
+Pre-release builds (ahead of what is on VIPM) are published on the [GitHub Releases page](https://github.com/astemes/astemes-lunit/releases/) as VIPM packages that can be installed manually through VIPM.
 
-Once installed, LUnit is integrated into the LabVIEW development environment and the functionality is accessed through the Tools->LUnit menu.
-From the menu, you may create a new tests or open the LUnit UI to run tests.
+## Getting started
 
-When you have created a Test Case class, you can create new test VI:s using the provided template or by creating public vi:s belonging to the Test Case class.
-Static dispatch is recommended, unless you are using the test inheritance add-on, as they have less overhead and does not lock the Test Case classes when the UI is loaded.
-As of LUnit 2.0, the tests can be named freely without any required convention.
-For compatibility with LUnit 1.x, the test vi:s must begin with the letters `test`.
+Once installed, LUnit is integrated into the LabVIEW development environment and is accessed through the **`Tools → LUnit`** menu. From there you can create new tests or open the LUnit UI to run them.
 
-All tests within a Test Case class may executed from the project explorer, by right-clicking on a Test Case and selecting `Run Test Case...` from the menu.
-As of LUnit version 1.5, a test VI may be executed by simply running it in LabVIEW using the run arrow.
-There is also a toolbar button added to the LabVIEW Project Explorer to run all tests in project or create a new test case.
+### Creating tests
 
-## Documentation
+Create a Test Case class, then add test VIs either from the provided template or by adding any public VI to the Test Case class.
 
-Documentation is available at [https://lunit.astemes.com](https://lunit.astemes.com).
-A 15 minute demonstration and introduction to LUnit, recorded in 2024, is available [here](https://www.youtube.com/watch?v=Cxb1FUIsC04).
-A presentation introducing LUnit was given at GLA Summit 2021 and the video recording is available [here](https://www.youtube.com/watch?v=Kys_w2RNffw&t=131s).
+**Static dispatch is recommended** unless you are using the test inheritance add-on — static dispatch has less overhead and does not lock the Test Case classes when the UI is loaded.
+
+As of LUnit 2.0, test VIs can be named freely. For compatibility with LUnit 1.x, test VI names must begin with `test`.
+
+### Running tests
+
+Tests can be run in several ways:
+
+- **Run a single test VI** — press the run arrow in LabVIEW (LUnit 1.5+).
+- **Run all tests in a Test Case** — right-click the Test Case in the project explorer and select `Run Test Case…`.
+- **Run all tests in a project** — use the toolbar button added to the LabVIEW Project Explorer.
+- **Run from the command line / CI** — see the [LUnit CLI](https://github.com/astemes/astemes-lunit-cli) or [LUnit for G-CLI](https://www.vipm.io/package/sas_workshops_lib_lunit_for_g_cli/)
+
+## Benchmark
+
+Test execution speed is really best-in-class. The chart below compares LUnit against two other popular LabVIEW unit testing toolkits on a benchmark of 160 empty tests across 20 Test Case classes, so only framework overhead is measured. Times are averages over 5 runs started from each framework's `Run All` feature. The benchmark source is available [here](https://github.com/Astemes/astemes-lunit/tree/main/sandbox/Benchmark).
+
+[![Benchmark](https://raw.githubusercontent.com/Astemes/astemes-lunit/main/docs/10_Basics/img/Benchmark.png)](https://raw.githubusercontent.com/Astemes/astemes-lunit/main/docs/10_Basics/img/Benchmark.png)
+
+Results come from two test environments — your numbers will differ with other setups, but the conclusion holds: LUnit is roughly 2–10× faster than other available tools. If you see significantly different results, please get in touch.
+
+## Documentation & learning resources
+
+- Full documentation: [lunit.astemes.com](https://lunit.astemes.com)
+- [15-minute demonstration and introduction (2024)](https://www.youtube.com/watch?v=Cxb1FUIsC04)
+- [GLA Summit 2021 presentation (somewhat dated)](https://www.youtube.com/watch?v=Kys_w2RNffw&t=131s)
 
 ## Examples
 
-There are a few examples installed with LUnit and these may be found through the NI Example Finder using the keyword `LUnit`.
-The examples are installed at `C:\Program Files (x86)\National Instruments\LabVIEW 20XX\examples\Astemes\LUnit` by default.
+A few examples are installed with LUnit and can be found in the **NI Example Finder** by searching for `LUnit`. They are installed by default under:
+
+```
+C:\Program Files (x86)\National Instruments\LabVIEW 20XX\examples\Astemes\LUnit
+```
 
 ## Is it free and open source?
 
-Yes, absolutely!
-LUnit is released by [Astemes](https://www.astemes.com) under the MIT license.
-If you find it useful, please consider starring the project on GitHub and VIPM.
+Yes, absolutely. LUnit is released by [Astemes](https://www.astemes.com) under the MIT license. If you find it useful, please consider starring the project on GitHub and VIPM.
 
-## Versioning
+## Versioning and upgrade notes
 
-With the release of LUnit 2.0, the requirement for test names to begin with the prefix `test` was removed.
-This change is non breaking, and LUnit 2.x can still run tests developed in LUnit 1.x and vice versa.
-However, tests without the `test` prefix will not be discovered in LUnit 1.x and the toolkit will need to be updated to run these.
+LUnit uses semantic versioning in the form `major.minor.fix.build`:
 
-LUnit uses semantic version in the format major.minor.fix.build. 
-The build version is of little significance as it only denotes the number of the build.
-The fix indicates a bug fix, minor feature, or other improvement and are continuously released on github using CD. 
-Minor version updates are uploaded to VIPM after an initial testing period.
-These updates should be non-breaking and should not require any changes to the client code.
-A major version update would mean that code developed using an earlier version might need modification.
-There are currently no plans to make any major updates.
+- **Build** — build number, no significance beyond identification.
+- **Fix** — bug fixes, minor features, and improvements. Released continuously to GitHub via CD.
+- **Minor** — non-breaking updates. Published to VIPM after an initial testing period. No client code changes should be needed.
+- **Major** — may require changes to code developed against earlier versions. No major updates are currently planned.
+
+### Upgrading from 1.x to 2.x
+
+LUnit 2.0 removed the requirement that test VI names begin with `test`. The change is non-breaking: **LUnit 2.x can run tests written for 1.x and vice versa**, but tests without the `test` prefix will not be discovered by LUnit 1.x, so downstream users of your tests must upgrade to run them.
+The design of the Reporting Plugin interface was simplified in 2.x, and any custom report plugin made for LUnit 1.x needs to be updated for compatibility.
 
 ## Support
 
-LUnit is an open source toolkit provided as is and without guarantees by [Astemes](https://www.astemes.com). If you encounter issues, use GitHub Issues to report and track the progress. If you have a suggestion for a solution, please consider making pull request. For paid-for professional support, please [contact Astemes directly](https://www.astemes.com/contact).
+LUnit is provided as-is and without guarantees by [Astemes](https://www.astemes.com). To report bugs or track progress, use [GitHub Issues](https://github.com/astemes/astemes-lunit/issues). If you have a solution in mind, a pull request is very welcome. For paid professional support, [contact Astemes directly](https://www.astemes.com).
 
-## Contribute
+## Contributing
 
-If you find LUnit useful, please share it with your colleagues and network to help grow the user base.
-Also, consider starring the project on VIPM or GitHub to let us know that you like it.
-If you find a bug, use the Issues section on GitHub.
+If you find LUnit useful, please share it with colleagues and your network to help grow the user base, and consider starring the project on GitHub or VIPM.
 
-To take a more active role, please feel free to fork the project and make a pull request. See `CONTRIBUTING.md` for more info on the development stack / process.
+For bugs, open an issue. To contribute code, fork the project and open a pull request. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the development stack and process.
