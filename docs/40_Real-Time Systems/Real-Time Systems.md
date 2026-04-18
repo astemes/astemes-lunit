@@ -1,14 +1,14 @@
 # Real-Time Systems
 
 A good rule of thumb is to only write tests for the code which you want to work.
-Thus, code running on a real time system does in general qualify for testing.
+Thus, code running on a real-time system generally qualifies for testing.
 And it is particularly useful to test the code outside production as debugging and troubleshooting a real-time target can be very painful.
 
 ## Testing with hardware
 
 Any kind of input/output (IO) is problematic when writing test code. 
 In LabVIEW we typically have IO in the form of user interfaces, hardware drivers, and possibly some databases and files.
-When running tests on code coupled to IO of some sort, it is in general worth separating the code at the boundaries to test the IO communication separtely from the rest of the application.
+When running tests on code coupled to IO of some sort, it is generally worth separating the code at the boundaries to test the IO communication separately from the rest of the application.
 There are many reasons for this including:
 
 - Testing with hardware requires you to have the hardware setup in order to run the tests. This might not be convenient or even feasible in many cases.
@@ -26,7 +26,7 @@ While it is very important to test the code on actual hardware, it does not make
 To do so would slow down test execution and requires access to the target during development.
 There are some differences and peculiarities to keep in mind when executing code in an RT environment, *e.g.* file paths and unsupported features, but apart from that the code should work the same as under Windows.
 This means that a failing test under Windows should fail on the RT system as well. 
-Even if the reverse is not allways true, it is often best to assume it is and fall back on debugging when it is not.
+Even if the reverse is not always true, it is often best to assume it is and fall back on debugging when it is not.
 If running tests on the RT system is necessary, please see [this section](#running-lunit-on-a-real-time-target)
 
 ## Working with tests in LabVIEW Real-Time

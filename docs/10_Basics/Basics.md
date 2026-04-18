@@ -21,20 +21,20 @@ You can also do the same from the ``Tools > LUnit > New Test Case...`` menu opti
 ![Tools Menu > Lunit > new test case](img/tools_menu_new_tc.jpg)
 
 Save the test case in a convenient location.
-Some like to keep the tests next to the code they are testing, and other keep them in a separate folder called ``Tests`` or similar.
-I personally find the later option with a separate top level directory the most convenient.
+Some like to keep the tests next to the code they are testing, and others keep them in a separate folder called ``Tests`` or similar.
+I personally find the latter option with a separate top level directory the most convenient.
 Keep in mind that tests should not be included in builds and there should be no dependencies pointing from your code to the test code.
 
 ## Adding a Test Method
 
 Now you have a test case and may add some test methods to the test case.
-A test method is a vi belonging to the test case class and will get executed by the framework.
+A test method is a VI belonging to the test case class and will get executed by the framework.
 
-If you are using LUnit version 1.x, the name of the vi **must** start with the four letters "test" (case insensitive).
+If you are using LUnit version 1.x, the name of the VI **must** start with the four letters "test" (case insensitive).
 In LUnit 2.0, this requirement has been relaxed and any public vi in a test case class is considered a test and enumerated in the UI.
 If the vi contains assertions, it will report results when the test is run.
-Helper vi:s should be made `private` within the test case class, which will avoid them being shown and run by the UI.
-It is **not** recommended to make test vi:s *dynamic dispatch*.
+Helper VIs should be made `private` within the test case class, which will avoid them being shown and run by the UI.
+It is **not** recommended to make test VIs *dynamic dispatch*.
 To create a new test method, right-click on the _Test Method Template.vit_ and select ``New from Template``.
 
 ![New from template](img/new_static_from_template.png)
@@ -44,7 +44,7 @@ It is important however that the connector pane uses the same pattern of termina
 The error in terminal is optional and never used when running tests by the framework.
 
 You should now make your test method test something useful by implementing the block diagram of the vi.
-To perform tests you will use the assertions available in the provided palette, or using quick drop.
+To perform tests you will use the assertions available in the provided palette, or via Quick Drop.
 
 ![Simple test case](img/simple_test_case.png)
 
@@ -63,7 +63,7 @@ Please note that the ``Pass if Equal.vi`` assertion will fail if either the type
 
 ## Running the Test Case
 
-You can run a single test vi (using the Run Arrow) and it will run and show the user interface with the results of the test.
+You can run a single test VI (using the Run Arrow) and it will run and show the user interface with the results of the test.
 When run this way, the vi is actually run twice. 
 First once, which causes the UI to launch and then a second time which is the actual test execution.
 In this way, the UI can run the `Setup.vi` dynamic dispatch, the test method and then finally the `Teardown.vi` method even when the test is not started from the UI.
@@ -73,7 +73,7 @@ From Quick Drop press ``Ctrl + L`` to run all tests within the current project.
 If you open Quick Drop from a VI and press ``Ctrl + Shift + L`` LUnit will run all tests from Test Case classes calling this specific VI. 
 This can be very useful for checking if an edit to a VI caused any test to fail.
 Please note that this feature requires all tests to be loaded into memory, *i.e.* included in the active project, and it can only check for static links.
-The last limitation means that the feature will not work for dynamic dispatch VI:s, as their call sites are not statically known.
+The last limitation means that the feature will not work for dynamic dispatch VIs, as their call sites are not statically known.
 
 To run all tests contained in a test case, you can right click it in the project window and select the ``Run Test Case...`` menu option.
 
@@ -82,21 +82,21 @@ To run all tests contained in a test case, you can right click it in the project
 This will open the test execution user interface and run the test case.
 Alternatively you can also launch the user interface from the tools menu through the ``Tools > LUnit > LUnit UI...`` menu option.
 This will open the user interface and show all tests in the current project.
-As the test is run, the results are also shown as visual icons overlays in the project explorer.
+As the test is run, the results are also shown as visual icon overlays in the project explorer.
 
 ![Run from right click menu](img/test_execution_ui.png)
 
-## Adding utility VI:s
+## Adding utility VIs
 
-It is common that code is reused between tests belonging to a test case class, and could then be placed in subVI:s or so called test utility vi:s.
-If you create such vi:s belonging to the class, make sure to restrict the access scope (*i.e* make the vi:s ``private`` or ``protected``), as the UI enumerates all public vi:s in the class.
+It is common that code is reused between tests belonging to a test case class, and could then be placed in subVIs or so-called test utility VIs.
+If you create such VIs belonging to the class, make sure to restrict the access scope (*i.e.* make the VIs ``private`` or ``protected``), as the UI enumerates all public VIs in the class.
 
 ## Using the Setup and Teardown methods
 
-You can add a Setup and a Teardown method to the test case by overriding the corresponding dynamic dispatch vi:s.
-The Setup vi will run once before each test method in the test case and the Teardown will run once after the test method is completed.
-This is useful in some cases, but should not be overused as it makes the test methods less verbose.
-If you need to pass data from the Setup vi to the test method vi or Teardown vi, you can bundle the data into the test case class wire.
+You can add a Setup and a Teardown method to the test case by overriding the corresponding dynamic dispatch VIs.
+The Setup VI will run once before each test method in the test case and the Teardown will run once after the test method is completed.
+This is useful in some cases, but should not be overused as it makes the test methods less self-contained.
+If you need to pass data from the Setup VI to the test method VI or Teardown VI, you can bundle the data into the test case class wire.
 
 ![Run from right click menu](img/setup_test_teardown.png)
 

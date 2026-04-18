@@ -6,7 +6,7 @@ The core was rewritten as of version 1.2 and the discussion below is accurate on
 
 ## General Architecture
 
-The framework defines a Runnable interface, which, as the name, implies defines a class as runnable.
+The framework defines a Runnable interface, which, as the name implies, defines a class as runnable.
 The base Test Case class implements the runnable interface and an execution of a test is done by instantiating an object of a Test Case class and running it.
 To run more than one test, multiple instances of the Test Case class are instantiated.
 
@@ -15,7 +15,7 @@ While a Test Case will always be done after one call to the Run VI, a Test Suite
 Test Suites may form composites (suites of suites), but this is not visible through the Runnable interface.
 
 Test Suites are typically generated through test discovery using factory VIs located in the Test Suite class. 
-These VI:s can generate test suites containing all tests in a specific class, library or project.
+These VIs can generate test suites containing all tests in a specific class, library or project.
 
 ## Test Case
 
@@ -27,8 +27,8 @@ These methods are executed before and after each test method in the test case.
 
 A test method is a VI belonging to a class inheriting from the Test Case class.
 It is not recommended to make test methods have Dynamic Dispatch terminals.
-As of version 2.0, it is not longer required for test method names to start with the letters `test` and any public method is considered a test.
-The connector pane of the test case must use the 4-2-2-4 pattern and have the standard connectors for static dispatch methods (the error input being optional as there will never be any upstreams errors coming into the test vi).
+As of version 2.0, it is no longer required for test method names to start with the letters `test` and any public method is considered a test.
+The connector pane of the test case must use the 4-2-2-4 pattern and have the standard connectors for static dispatch methods (the error input being optional as there will never be any upstream errors coming into the test VI).
 
 ![Test method connector pane](img/test_method_connector_pane.png)
 
@@ -52,7 +52,7 @@ When the Parallel Test Runner is enabled, tests are grouped into one suite for e
 
 ## Test Finder
 
-When launching the LUnit UI, the test finder searches for classes inheriting from the base Test Class within the current application instance.
+When launching the LUnit UI, the test finder searches for classes inheriting from the base Test Case class within the current application instance.
 The result is saved into an index file and retrieved on subsequent runs to only search through classes which have changed since last time.
 To force the test finder to recreate the index, use the refresh test index button in the LUnit UI.
 
@@ -72,12 +72,12 @@ Because of the low level nature, this API is more volatile and may break in late
 ## Low Level API
 
 Before going on, see the warning in the previous section.
-Now continue on your own risk.
+Now continue at your own risk.
 
-The low level API may be use to run tests in various ways.
+The low level API may be used to run tests in various ways.
 Tests are executed using the provided methods and results are returned using User Events, which may be registered for using the provided API method.
 To use the API methods, an API reference must first be obtained using the `LUnit Open API Reference.vi`.
-The configuration VI:s `LUnit Configure Reporting.vi` and `LUnit Configure Test Runner.vi`  should be used before executing a test.
+The configuration VIs `LUnit Configure Reporting.vi` and `LUnit Configure Test Runner.vi` should be used before executing a test.
 
 A test case is executed by calling one of the Run Test API VI:s.
 To observe the results of the test execution, the `LUnit Register for Events.vi` must be called before starting test execution.

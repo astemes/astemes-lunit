@@ -1,8 +1,8 @@
 # Writing Unit Tests
 
-This section is meant to give som advice to start writing unit tests and is not specific to LUnit in any way.
-There is already a lot which has been written on the topic and there is a lot of good resources in the literature outside the LabVIEW sphere.
-As the topic is not a science, this section should be viewed as the views and opinions of the autor and not as facts.
+This section is meant to give some advice to start writing unit tests and is not specific to LUnit in any way.
+There is already a lot that has been written on the topic and there are a lot of good resources in the literature outside the LabVIEW sphere.
+As the topic is not a science, this section should be viewed as the views and opinions of the author and not as facts.
 
 ## Why bother writing unit tests?
 

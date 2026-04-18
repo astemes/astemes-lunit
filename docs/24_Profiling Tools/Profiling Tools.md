@@ -2,17 +2,17 @@
 
 LUnit has built in tools to help profile test suites.
 These tools are meant to be used to identify issues and locate parts needing improvement, but should probably not be used as hard benchmarking tools.
-The tools are enabled from the `Tools` menu of the LUnit User Interface and the results are displayed after test have been executed.
+The tools are enabled from the `Tools` menu of the LUnit User Interface and the results are displayed after tests have been executed.
 
 ![Tools Menu](img/tools_menu.png)
 
 ## Execution Profiler
 
 The execution profiler is used to profile the time each test method takes to execute.
-It is useful for identifying bottlenecks and improve the performance of a test suite.
+It is useful for identifying bottlenecks and improving the performance of a test suite.
 Once activated, the following window is shown after each test execution.
 
-![Execution proviler](img/execution_profiler.png)
+![Execution profiler](img/execution_profiler.png)
 
 In the table, the execution time for the test and the test name are shown, ordered by test time.
 The histogram is useful to identify outliers and it is often these tests which have the biggest impact on the test execution time.
@@ -20,8 +20,8 @@ The histogram is useful to identify outliers and it is often these tests which h
 ## Code Coverage Analyzer
 
 Analysis of code coverage was added as a feature in LUnit version 1.0.6.
-The code coverage analyzer is useful for identifying parts of the code which has low test coverage.
-The coverate is reported for each VI as a percentage indicating how much of the block diagram is exercised during test execution.
+The code coverage analyzer is useful for identifying parts of the code with low test coverage.
+The coverage is reported for each VI as a percentage indicating how much of the block diagram is exercised during test execution.
 
 ![Code coverage](img/code_coverage.png)
 

@@ -3,7 +3,7 @@ LUnit was designed to be extendable through plugins and a lot of the features of
 If you'd like to create your own reporting plugin, this can be done following the guide below.
 The only requirements for a reporting plugin is that it implements two specific interfaces and is placed in a specific folder within vi.lib.
 With the release of LUnit 2.0, the reporting plugin design was updated to make it simpler and more developer friendly.
-Plugins made for earlier versions of the framework needs to be updated to adhere to the new design, please see section below.
+Plugins made for earlier versions of the framework need to be updated to adhere to the new design, please see section below.
 
 ## Getting started
 To create a custom reporting plugin, you will need to create a class which implements the `LUnit Reporting Plugin.lvclass` interface.
@@ -18,7 +18,7 @@ Data can be passed between the class method calls by bundling data into the clas
 One important limitation is that new references cannot be opened during the `LUnit Result.vi` or they might be prematurely closed by the LabVIEW run-time.
 
 It is important to understand the different types of results which are sent to the `LUnit Result.vi`.
-Please refer to the Framework Architecture document and the unit tests in the LUnit project fot the native report formats.
+Please refer to the Framework Architecture document and the unit tests in the LUnit project for the native report formats.
 
 ## Plugin Configuration
 When the user activates the plugin, you have the option to provide a configuration dialog.
@@ -42,7 +42,7 @@ Change the inheritance to use the LabVIEW Object as parent class and remove the 
 Make your plugin inherit the new `LUnit Reporting Plugin.lvclass` interface.
 2. Update the methods of the plugin to follow the new convention.
 - Rename `LUnit Open Report File.vi` to `LUnit Start Test.vi`
-- Renmae `LUnit Handle Result.vi` to `LUnit Result.vi`
+- Rename `LUnit Handle Result.vi` to `LUnit Result.vi`
 - Rename `LUnit Close Report File.vi` to `LUnit Stop Test.vi`
 These three methods should have the regular Dynamic Dispatch template connector pane with a Dynamic Dispatch Input and Output, as well as the error terminals, and they need to be made reentrant. The `LUnit Start Test.vi` also needs a string array input, where a list of tests is provided when the test is started.
 3. The path to save the report is no longer handled by the framework and the plugin must determine this path.
