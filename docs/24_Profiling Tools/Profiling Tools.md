@@ -19,19 +19,10 @@ The histogram is useful to identify outliers and it is often these tests which h
 
 ## Code Coverage Analyzer
 
-Analysis of code coverage was added as a feature in LUnit version 1.0.6.
+Analysis of code coverage was added as a feature in LUnit version 1.0.6 and as of 2.0 it is moved into a separate project at [LUnit Coverage Analysis](https://github.com/astemes/astemes-lunit-coverage-analysis).
+The code coverage tooling can be installed as an add-on through VIPM.
 The code coverage analyzer is useful for identifying parts of the code with low test coverage.
 The coverage is reported for each VI as a percentage indicating how much of the block diagram is exercised during test execution.
-
-![Code coverage](img/code_coverage.png)
-
-There are a few caveats to be aware of when using the coverage tool.
-
-- The tool measures how many of the diagrams are executed in a VI as a percentage
-- The reported coverage is zero for VIs which do not have debugging activated
-- VIs in vi.lib are ignored
-- Any VI with a name starting with `test` is ignored
-
-Further, it is important to understand that the number obtained does not tell anything about the quality of the tests.
+It is important to understand that the number obtained does not tell anything about the quality of the tests.
 It only reveals how much of the code is exercised by the tests.
 For a deeper discussion of the usefulness of the metric, please see [this](https://martinfowler.com/bliki/TestCoverage.html) blog post.
