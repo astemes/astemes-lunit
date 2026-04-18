@@ -22,7 +22,7 @@ You can also do the same from the ``Tools > LUnit > New Test Case...`` menu opti
 
 Save the test case in a convenient location.
 Some like to keep the tests next to the code they are testing, and others keep them in a separate folder called ``Tests`` or similar.
-A separate top-level directory is often the most practical option.
+A separate top-level directory is often a sensible default option.
 Keep in mind that tests should not be included in builds and there should be no dependencies pointing from your code to the test code.
 
 ## Adding a Test Method
