@@ -28,7 +28,7 @@ Focusing on one aspect at a time when writing tests helps keep units of code sma
 
 ### Confidence to refactor
 
-Refactoring, *i.e.* changing the structureof code without changing its' behavior, is essential for keeping a codebase healthy over time.
+Refactoring, *i.e.* changing the structure of code without changing its' behavior, is essential for keeping a codebase healthy over time.
 A good test suite makes it possible to refactor with confidence, since any unintended behavioral change will immediately appear as a failing test.
 
 ### Tests as documentation
