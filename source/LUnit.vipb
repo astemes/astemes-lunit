@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2026-04-10 08:47:52" Creator="Anton Sundqvist" Comments="" ID="99c28d1006e5e79470fdd0a18488b190">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-03-25 19:33:33" Modified_Date="2026-04-25 13:35:49" Creator="Anton Sundqvist" Comments="" ID="74f3902d53b7d50c57d9f096defca236">
   <Library_General_Settings>
     <Package_File_Name>Astemes_lib_LUnit</Package_File_Name>
     <Library_Version>2.0.0.5</Library_Version>
@@ -71,6 +71,7 @@ Fix issue #50 - Improved readability of descriptions when comparing clusters - n
 Fix issue #52 - Support for running only failed methods using the parameterized test add-on
 Fix issue #56 - Support for running multiple report types simultaneously
 Fix issue #57 - Aborting Parallel tests now stops immediately
+Fix issue #60 - Fix Suite result inconsistency if failed result followed by skip
 
 Additionally, the test discovery has been improved significantly which makes the UI even snappier.
 The improved test cache mechanism improves load time for the Parameterized add-on.</Release_Notes>
@@ -443,7 +444,7 @@ The improved test cache mechanism improves load time for the Parameterized add-o
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Fail If Equal.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>289D4EB2C4EEE295DDE3A07A866347DE</GUID>
+      <GUID>508E39B15C9FAB79002C3D4E4BDB7B4E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -548,7 +549,7 @@ The improved test cache mechanism improves load time for the Parameterized add-o
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\Advanced Assertions\Fail If In Collection.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BF27106FBAD98982C1C82E268A27AB11</GUID>
+      <GUID>51B926517DC4950B9F9F4831B2F52D90</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -583,7 +584,7 @@ The improved test cache mechanism improves load time for the Parameterized add-o
         <Path>..\builds\LUnit\vi.lib\Astemes\LUnit\Palette\API\LUnit Run Tests.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>155D046D2AA75809926D7E5114305DB6</GUID>
+      <GUID>7A01633E7307785E18A6A4663ECA1303</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
