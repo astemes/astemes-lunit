@@ -818,7 +818,7 @@
 				<Property Name="Destination[9].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">19</Property>
 				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B52C466E-9FC8-432C-84AA-3C84B4BB3A15}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{190DB874-C0B9-41B5-8978-97D474626471}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">9</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Core/Result.lvlib</Property>
@@ -1295,6 +1295,7 @@
 				<Property Name="Source[86].destinationIndex" Type="Int">16</Property>
 				<Property Name="Source[86].itemID" Type="Ref">/My Computer/Post-Install Custom Action.vi</Property>
 				<Property Name="Source[86].newName" Type="Str">LUnit Post-Install Custom Action.vi</Property>
+				<Property Name="Source[86].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[86].type" Type="Str">VI</Property>
 				<Property Name="Source[87].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[87].Container.applyPrefix" Type="Bool">true</Property>
