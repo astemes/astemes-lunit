@@ -9,4 +9,5 @@
 </Property>
 	<Item Name="Get Default Report Path.vi" Type="VI" URL="../Get Default Report Path.vi"/>
 	<Item Name="Get Index Directory Path.vi" Type="VI" URL="../Get Index Directory Path.vi"/>
+	<Item Name="Get VI Library Path.vi" Type="VI" URL="../Get VI Library Path.vi"/>
 </Library>
