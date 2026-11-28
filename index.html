@@ -1,0 +1,780 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Anton Sundqvist">
+      
+      
+        <link rel="canonical" href="http://astemes.com/">
+      
+      
+      
+      
+      <link rel="icon" href="Style/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>LUnit</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="Style/style.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lunit" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="LUnit" class="md-header__button md-logo" aria-label="LUnit" data-md-component="logo">
+      
+  <img src="Style/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LUnit
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              LUnit
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/astemes/astemes-lunit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="LUnit" class="md-nav__button md-logo" aria-label="LUnit" data-md-component="logo">
+      
+  <img src="Style/logo.png" alt="logo">
+
+    </a>
+    LUnit
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/astemes/astemes-lunit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="10_Basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="20_Framework%20Architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Framework Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="24_Profiling%20Tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Profiling Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="30_CI%20Integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CI Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="40_Real-Time%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Real-Time Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="70_Writing%20Unit%20Tests/Writing%20Unit%20Tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Writing Unit Tests
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="81_Creating%20Report%20Plugins/Creating%20Report%20Plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating Report Plugins
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            License
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="90_License/10_Astemes%20LUnit/LICENSE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Astemes LUnit
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="90_License/80_JKI%20Flat%20UI%20Controls/JKI%20Flat%20UI%20Controls%202.0%20License/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JKI Flat UI Controls
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting started
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benchmark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-learning-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation &amp; learning resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-it-free-and-open-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is it free and open source?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versioning-and-upgrade-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versioning and upgrade notes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Versioning and upgrade notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upgrading-from-1x-to-2x" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrading from 1.x to 2.x
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="lunit">LUnit</h1>
+<p><a href="https://www.vipm.io/package/astemes_lib_lunit/"><img alt="VIPM installs" src="https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=installs" /></a>
+<a href="https://www.vipm.io/package/astemes_lib_lunit/"><img alt="VIPM stars" src="https://www.vipm.io/package/astemes_lib_lunit/badge.svg?metric=stars" /></a>
+<a href="https://github.com/astemes/astemes-lunit/actions/workflows/ci.yml"><img alt="Unit Tests" src="https://github.com/astemes/astemes-lunit/actions/workflows/ci.yml/badge.svg" /></a>
+<a href="https://github.com/astemes/astemes-lunit/actions/workflows/release.yml"><img alt="Build and Release" src="https://github.com/astemes/astemes-lunit/actions/workflows/release.yml/badge.svg" /></a></p>
+<p>A unit testing framework for LabVIEW, built on the <a href="https://en.wikipedia.org/wiki/XUnit">xUnit</a> industry standard and inspired by <a href="https://github.com/JKISoftware/JKI-VI-Tester">JKI VI Tester</a>. LUnit helps you test-drive your LabVIEW development with a fast, tightly integrated workflow.</p>
+<p>Full documentation: <strong><a href="https://lunit.astemes.com/">lunit.astemes.com</a></strong></p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Best-in-class test execution speed (see <a href="#benchmark">Benchmark</a>)</li>
+<li>Clear and informative results view</li>
+<li>Run specific tests quickly from the right-click menu</li>
+<li>Test results visible directly in the LabVIEW project</li>
+<li>Instant loading of the UI</li>
+<li>Parallel test execution managed by the framework</li>
+<li>Profiling tools for test execution time and code coverage</li>
+<li>Native CLI and first-class CI support</li>
+<li>LabVIEW API for extension and integration</li>
+<li>Plugin architecture which allows extenssion through add-ons</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>LabVIEW 2020 (32-bit), LabVIEW 2020 SP1 (64-bit), or any later version. </li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>The recommended way to install LUnit is via <a href="https://www.vipm.io/package/astemes_lib_lunit/">VI Package Manager (VIPM)</a>. This installs the latest stable release.</p>
+<p>Pre-release builds (ahead of what is on VIPM) are published on the <a href="https://github.com/astemes/astemes-lunit/releases/">GitHub Releases page</a> as VIPM packages that can be installed manually through VIPM.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>Once installed, LUnit is integrated into the LabVIEW development environment and is accessed through the <strong><code>Tools → LUnit</code></strong> menu. From there you can create new tests or open the LUnit UI to run them.</p>
+<h3 id="creating-tests">Creating tests</h3>
+<p>Create a Test Case class, then add test VIs either from the provided template or by adding any public VI to the Test Case class.</p>
+<p><strong>Static dispatch is recommended</strong> unless you are using the test inheritance add-on — static dispatch has less overhead and does not lock the Test Case classes when the UI is loaded.</p>
+<p>As of LUnit 2.0, test VIs can be named freely. For compatibility with LUnit 1.x, test VI names must begin with <code>test</code>.</p>
+<h3 id="running-tests">Running tests</h3>
+<p>Tests can be run in several ways:</p>
+<ul>
+<li><strong>Run a single test VI</strong> — press the run arrow in LabVIEW (LUnit 1.5+).</li>
+<li><strong>Run all tests in a Test Case</strong> — right-click the Test Case in the project explorer and select <code>Run Test Case…</code>.</li>
+<li><strong>Run all tests in a project</strong> — use the toolbar button added to the LabVIEW Project Explorer.</li>
+<li><strong>Run from the command line / CI</strong> — see the <a href="https://github.com/astemes/astemes-lunit-cli">LUnit CLI</a> or <a href="https://www.vipm.io/package/sas_workshops_lib_lunit_for_g_cli/">LUnit for G-CLI</a></li>
+</ul>
+<h2 id="benchmark">Benchmark</h2>
+<p>Test execution speed is really best-in-class. The chart below compares LUnit against two other popular LabVIEW unit testing toolkits on a benchmark of 160 empty tests across 20 Test Case classes, so only framework overhead is measured. Times are averages over 5 runs started from each framework's <code>Run All</code> feature. The benchmark source is available <a href="https://github.com/Astemes/astemes-lunit/tree/main/sandbox/Benchmark">here</a>.</p>
+<p><a href="https://raw.githubusercontent.com/Astemes/astemes-lunit/main/docs/10_Basics/img/Benchmark.png"><img alt="Benchmark" src="https://raw.githubusercontent.com/Astemes/astemes-lunit/main/docs/10_Basics/img/Benchmark.png" /></a></p>
+<p>Results come from two test environments — your numbers will differ with other setups, but the conclusion holds: LUnit is roughly 2–10× faster than other available tools. If you see significantly different results, please get in touch.</p>
+<h2 id="documentation-learning-resources">Documentation &amp; learning resources</h2>
+<ul>
+<li>Full documentation: <a href="https://lunit.astemes.com">lunit.astemes.com</a></li>
+<li><a href="https://www.youtube.com/watch?v=Cxb1FUIsC04">15-minute demonstration and introduction (2024)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Kys_w2RNffw&amp;t=131s">GLA Summit 2021 presentation (somewhat dated)</a></li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p>A few examples are installed with LUnit and can be found in the <strong>NI Example Finder</strong> by searching for <code>LUnit</code>. They are installed by default under:</p>
+<pre><code>C:\Program Files (x86)\National Instruments\LabVIEW 20XX\examples\Astemes\LUnit
+</code></pre>
+<h2 id="is-it-free-and-open-source">Is it free and open source?</h2>
+<p>Yes, absolutely. LUnit is released by <a href="https://www.astemes.com">Astemes</a> under the MIT license. If you find it useful, please consider starring the project on GitHub and VIPM.</p>
+<h2 id="versioning-and-upgrade-notes">Versioning and upgrade notes</h2>
+<p>LUnit uses semantic versioning in the form <code>major.minor.fix.build</code>:</p>
+<ul>
+<li><strong>Build</strong> — build number, no significance beyond identification.</li>
+<li><strong>Fix</strong> — bug fixes, minor features, and improvements. Released continuously to GitHub via CD.</li>
+<li><strong>Minor</strong> — non-breaking updates. Published to VIPM after an initial testing period. No client code changes should be needed.</li>
+<li><strong>Major</strong> — may require changes to code developed against earlier versions. No major updates are currently planned.</li>
+</ul>
+<h3 id="upgrading-from-1x-to-2x">Upgrading from 1.x to 2.x</h3>
+<p>LUnit 2.0 removed the requirement that test VI names begin with <code>test</code>. The change is non-breaking: <strong>LUnit 2.x can run tests written for 1.x and vice versa</strong>, but tests without the <code>test</code> prefix will not be discovered by LUnit 1.x, so downstream users of your tests must upgrade to run them.
+The design of the Reporting Plugin interface was simplified in 2.x, and any custom report plugin made for LUnit 1.x needs to be updated for compatibility.</p>
+<h2 id="support">Support</h2>
+<p>LUnit is provided as-is and without guarantees by <a href="https://www.astemes.com">Astemes</a>. To report bugs or track progress, use <a href="https://github.com/astemes/astemes-lunit/issues">GitHub Issues</a>. If you have a solution in mind, a pull request is very welcome. For paid professional support, <a href="https://www.astemes.com">contact Astemes directly</a>.</p>
+<h2 id="contributing">Contributing</h2>
+<p>If you find LUnit useful, please share it with colleagues and your network to help grow the user base, and consider starring the project on GitHub or VIPM.</p>
+<p>For bugs, open an issue. To contribute code, fork the project and open a pull request. See <a href="CONTRIBUTING.md"><code>CONTRIBUTING.md</code></a> for the development stack and process.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 - 2026 Astemes
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
